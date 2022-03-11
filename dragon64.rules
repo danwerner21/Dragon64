@@ -1,0 +1,325 @@
+
+(rules PCB dragon64
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 48666)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.5)
+    )
+  )
+  (rule
+    (width 204.0)
+    (clear 203.4)
+    (clear 101.6 (type smd_to_turn_gap))
+    (clear 254.2 (type default_crystal))
+    (clear 305.0 (type default_"port-power"))
+    (clear 305.0 (type default_power+12v))
+    (clear 305.0 (type default_power+5v))
+    (clear 305.0 (type default_"power-12v"))
+    (clear 305.0 (type default_"power-5v"))
+    (clear 305.0 (type default_"power-gnd"))
+    (clear 305.0 (type default_"power-mot"))
+    (clear 254.2 (type default_video))
+    (clear 50.8 (type smd_smd))
+    (clear 254.2 (type smd_crystal))
+    (clear 305.0 (type smd_"port-power"))
+    (clear 305.0 (type smd_power+12v))
+    (clear 305.0 (type smd_power+5v))
+    (clear 305.0 (type smd_"power-12v"))
+    (clear 305.0 (type smd_"power-5v"))
+    (clear 305.0 (type smd_"power-gnd"))
+    (clear 305.0 (type smd_"power-mot"))
+    (clear 254.2 (type smd_video))
+    (clear 254.2 (type "kicad_default"_crystal))
+    (clear 305.0 (type "kicad_default"_"port-power"))
+    (clear 305.0 (type "kicad_default"_power+12v))
+    (clear 305.0 (type "kicad_default"_power+5v))
+    (clear 305.0 (type "kicad_default"_"power-12v"))
+    (clear 305.0 (type "kicad_default"_"power-5v"))
+    (clear 305.0 (type "kicad_default"_"power-gnd"))
+    (clear 305.0 (type "kicad_default"_"power-mot"))
+    (clear 254.2 (type "kicad_default"_video))
+    (clear 254.2 (type crystal_crystal))
+    (clear 305.0 (type crystal_"port-power"))
+    (clear 305.0 (type crystal_power+12v))
+    (clear 305.0 (type crystal_power+5v))
+    (clear 305.0 (type crystal_"power-12v"))
+    (clear 305.0 (type crystal_"power-5v"))
+    (clear 305.0 (type crystal_"power-gnd"))
+    (clear 305.0 (type crystal_"power-mot"))
+    (clear 254.2 (type crystal_video))
+    (clear 305.0 (type "port-power"_"port-power"))
+    (clear 305.0 (type "port-power"_power+12v))
+    (clear 305.0 (type "port-power"_power+5v))
+    (clear 305.0 (type "port-power"_"power-12v"))
+    (clear 305.0 (type "port-power"_"power-5v"))
+    (clear 305.0 (type "port-power"_"power-gnd"))
+    (clear 305.0 (type "port-power"_"power-mot"))
+    (clear 305.0 (type "port-power"_video))
+    (clear 305.0 (type power+12v_power+12v))
+    (clear 305.0 (type power+12v_power+5v))
+    (clear 305.0 (type power+12v_"power-12v"))
+    (clear 305.0 (type power+12v_"power-5v"))
+    (clear 305.0 (type power+12v_"power-gnd"))
+    (clear 305.0 (type power+12v_"power-mot"))
+    (clear 305.0 (type power+12v_video))
+    (clear 305.0 (type power+5v_power+5v))
+    (clear 305.0 (type power+5v_"power-12v"))
+    (clear 305.0 (type power+5v_"power-5v"))
+    (clear 305.0 (type power+5v_"power-gnd"))
+    (clear 305.0 (type power+5v_"power-mot"))
+    (clear 305.0 (type power+5v_video))
+    (clear 305.0 (type "power-12v"_"power-12v"))
+    (clear 305.0 (type "power-12v"_"power-5v"))
+    (clear 305.0 (type "power-12v"_"power-gnd"))
+    (clear 305.0 (type "power-12v"_"power-mot"))
+    (clear 305.0 (type "power-12v"_video))
+    (clear 305.0 (type "power-5v"_"power-5v"))
+    (clear 305.0 (type "power-5v"_"power-gnd"))
+    (clear 305.0 (type "power-5v"_"power-mot"))
+    (clear 305.0 (type "power-5v"_video))
+    (clear 305.0 (type "power-gnd"_"power-gnd"))
+    (clear 305.0 (type "power-gnd"_"power-mot"))
+    (clear 305.0 (type "power-gnd"_video))
+    (clear 305.0 (type "power-mot"_"power-mot"))
+    (clear 305.0 (type "power-mot"_video))
+    (clear 254.2 (type video_video))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-crystal" "Via[0-1]_800:400_um" crystal
+  )
+  (via 
+    "Via[0-1]_800:400_um-port-power" "Via[0-1]_800:400_um" "port-power"
+  )
+  (via 
+    "Via[0-1]_800:400_um-power+12v" "Via[0-1]_800:400_um" power+12v
+  )
+  (via 
+    "Via[0-1]_800:400_um-power+5v" "Via[0-1]_800:400_um" power+5v
+  )
+  (via 
+    "Via[0-1]_800:400_um-power-12v" "Via[0-1]_800:400_um" "power-12v"
+  )
+  (via 
+    "Via[0-1]_800:400_um-power-5v" "Via[0-1]_800:400_um" "power-5v"
+  )
+  (via 
+    "Via[0-1]_800:400_um-power-gnd" "Via[0-1]_800:400_um" "power-gnd"
+  )
+  (via 
+    "Via[0-1]_800:400_um-power-mot" "Via[0-1]_800:400_um" "power-mot"
+  )
+  (via 
+    "Via[0-1]_800:400_um-video" "Via[0-1]_800:400_um" video
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    crystal "Via[0-1]_800:400_um-crystal"
+  )
+  (via_rule
+    "port-power" "Via[0-1]_800:400_um-port-power"
+  )
+  (via_rule
+    power+12v "Via[0-1]_800:400_um-power+12v"
+  )
+  (via_rule
+    power+5v "Via[0-1]_800:400_um-power+5v"
+  )
+  (via_rule
+    "power-12v" "Via[0-1]_800:400_um-power-12v"
+  )
+  (via_rule
+    "power-5v" "Via[0-1]_800:400_um-power-5v"
+  )
+  (via_rule
+    "power-gnd" "Via[0-1]_800:400_um-power-gnd"
+  )
+  (via_rule
+    "power-mot" "Via[0-1]_800:400_um-power-mot"
+  )
+  (via_rule
+    video "Via[0-1]_800:400_um-video"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 204.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    /A12 /A11 /A10 /A9 /A8 /A7 /A6 /A5
+    /A4 /A3 /A2 /A1 /A0 /A15 /A14 /A13
+    /EXTMEM /E /Q /R~W~ /ROMSEL /D6 /D4 /D2
+    /D0 /D7 /D5 /D3 /D1 /Z6 /Z5 /Z4
+    /Z3 /Z2 /Z1 /Z0 /Z7 /P2 /ROM2 /ROM1
+    /ROM0 /RAM/DD7 /RAM/DD6 /RAM/DD5 /RAM/DD4 /RAM/DD3 /RAM/DD2 /RAM/DD1
+    /RAM/DD0 /RAM/DO7 /RAM/DO3 /RAM/DO6 /RAM/DO1 /RAM/DO5 /RAM/DO4 /RAM/DO0
+    /RAM/DO2 /RAM "Net-(LK1-Pad2)" "Net-(IC35-Pad10)" "Net-(IC35-Pad5)" "Net-(IC35-Pad1)" "Net-(IC35-Pad4)" "Net-(IC36-Pad13)"
+    "Net-(IC36-Pad1)" /PIAs/~A~G /PIAs/GM2 /PIAs/GM1 /PIAs/GM0 /PIAs/CSS /CART "Net-(C36-Pad2)"
+    "Net-(C37-Pad2)" "Net-(IC4-Pad15)" "Net-(IC4-Pad6)" "Net-(IC4-Pad12)" "Net-(IC4-Pad4)" "Net-(IC4-Pad10)" "Net-(IC4-Pad2)" "Net-(IC11-Pad10)"
+    "Net-(IC11-Pad11)" "Net-(IC11-Pad12)" "Net-(IC11-Pad9)" /P0 /P1 "Net-(R2-Pad2)" "Net-(D12-Pad1)" "Net-(IC2-Pad3)"
+    "Net-(IC2-Pad2)" /PIAs/TAPE /PIAs/MOTOR "Net-(C23-Pad2)" /PIAs/DAC "Net-(IC2-Pad5)" /PIAs/STY /ESND
+    "Net-(IC36-Pad8)" "Net-(IC36-Pad4)" /PIAs/STROBE "Net-(IC35-Pad13)" "/PIAs/JR_X" "/PIAs/JR_Y" "/PIAs/JL_X" "/PIAs/JL_Y"
+    "/PIAs/JL_F1" "/PIAs/JR_F1" "/PIAs/JL_F2" "/PIAs/JR_F2" /PIAs/TSND /PIAs/MUXB /PIAs/MUXA /PIAs/MUXZ
+    /PIAs/SBS /PIAs/DAC4 /PIAs/DAC0 /PIAs/DAC2 /PIAs/DAC3 /PIAs/DAC1 /PIAs/DAC5 /PIAs/KR0
+    /PIAs/KR2 /PIAs/KC0 /PIAs/KC7 /PIAs/KC2 /PIAs/KC5 /PIAs/KC4 /PIAs/KC3 /PIAs/KC6
+    /PIAs/KC1 /PIAs/KR4 /PIAs/KR5 /PIAs/KR6 /PIAs/JCMP /PIAs/PR1 /PIAs/PR6 /PIAs/PR3
+    /PIAs/PR4 /PIAs/PR5 /PIAs/PR2 /PIAs/PR7 /PIAs/PR0 "/Serial/S-12V" /Serial/TXD /Serial/RXD
+    /Serial/S+12V /Serial/DTR /Serial/CTS /PIAs/CASOUT /PIAs/CASIN /S2 /S0 /S1
+    /~RESET /~IRQ /~FIRQ /~CAS /~RAS0 /~WE /PIAs/~A2 /PIAs/~ACK
+    /PIAs/~BUSY /~HALT /~NMI "Net-(IC36-Pad2)" "Net-(IC39-Pad34)" "Net-(IC39-Pad33)" "Net-(IC39-Pad32)" "Net-(IC39-Pad12)"
+    "Net-(IC39-Pad31)" "Net-(IC39-Pad11)" "Net-(IC39-Pad30)" "Net-(IC39-Pad10)" "Net-(IC39-Pad29)" "Net-(IC39-Pad28)" /PIAs/KR1 /PIAs/KR3
+    "atx_on" "Net-(J1-Pad1)" "Net-(PL6-Pad2)" "RES_IN" "Net-(C9-Pad2)" "Net-(C9-Pad1)" "Net-(C24-Pad2)" "Net-(C24-Pad1)"
+    "Net-(C25-Pad2)" "Net-(C25-Pad1)" "Net-(IC11-Pad7)" "Net-(IC11-Pad6)" VCLK1 "Net-(C44-Pad1)" "Net-(D4-Pad2)" "Net-(D4-Pad1)"
+    "Net-(D5-Pad2)" SOUND VCLK HS FS DA0 "Net-(Q1-Pad3)" "Net-(Q3-Pad1)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 204.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class crystal
+    "/XL3_A" "/XL3_B" "/XL3_C"
+    (clearance_class crystal)
+    (via_rule crystal)
+    (rule
+      (width 204.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "port-power"
+    /PIAs/J+5V
+    (clearance_class "port-power")
+    (via_rule port-power)
+    (rule
+      (width 305.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class power+12v
+    +12V "/PIAs/MOT_FBD"
+    (clearance_class power+12v)
+    (via_rule power+12v)
+    (rule
+      (width 635.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class power+5v
+    +5V
+    (clearance_class power+5v)
+    (via_rule power+5v)
+    (rule
+      (width 1000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "power-12v"
+    "-12V"
+    (clearance_class "power-12v")
+    (via_rule power-12v)
+    (rule
+      (width 508.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "power-5v"
+    "-5V"
+    (clearance_class "power-5v")
+    (via_rule power-5v)
+    (rule
+      (width 305.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "power-gnd"
+    GND
+    (clearance_class "power-gnd")
+    (via_rule power-gnd)
+    (rule
+      (width 762.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "power-mot"
+    /PIAs/REM2 /PIAs/REM1 /PIAs/REM3
+    (clearance_class "power-mot")
+    (via_rule power-mot)
+    (rule
+      (width 762.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class video
+    /Video/oA /Video/oB /Video/CHB /Video/Y CHROMA LUMA
+    (clearance_class video)
+    (via_rule video)
+    (rule
+      (width 305.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

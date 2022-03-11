@@ -379,8 +379,6 @@ Wire Wire Line
 	1150 10850 1350 10850
 Text HLabel 1150 10850 0    50   Input ~ 0
 CART
-Text HLabel 3350 2600 2    50   Input ~ 0
-~NHS
 Wire Wire Line
 	4000 1200 4000 1700
 Wire Wire Line
@@ -782,8 +780,6 @@ Wire Wire Line
 Wire Wire Line
 	7800 9350 7400 9350
 Connection ~ 7400 9350
-Text HLabel 3350 3900 2    50   Input ~ 0
-~FS
 Wire Wire Line
 	3350 3900 3250 3900
 $Comp
@@ -1545,8 +1541,6 @@ Wire Wire Line
 	5550 1800 4100 1800
 Wire Wire Line
 	4400 2000 5550 2000
-Text HLabel 15050 6000 2    50   Output ~ 0
-SOUND
 Wire Wire Line
 	12900 5850 12900 6000
 $Comp
@@ -2319,8 +2313,6 @@ Wire Wire Line
 	14700 5700 14700 6000
 Connection ~ 14700 6000
 Wire Wire Line
-	14700 6000 15050 6000
-Wire Wire Line
 	1900 6750 1900 7000
 Wire Wire Line
 	2150 6650 2150 7000
@@ -2686,4 +2678,44 @@ NoConn ~ 14650 8650
 NoConn ~ 14200 8650
 NoConn ~ 13800 8650
 NoConn ~ -2900 2550
+Text GLabel 3350 2600 2    50   Input ~ 0
+HS
+$Comp
+L Device:R R?
+U 1 1 62C31866
+P 15350 6000
+AR Path="/62C31866" Ref="R?"  Part="1" 
+AR Path="/60168BB0/62C31866" Ref="R41"  Part="1" 
+F 0 "R41" V 15450 5950 50  0000 L CNN
+F 1 "1K" V 15250 5950 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 15280 6000 50  0001 C CNN
+F 3 "~" H 15350 6000 50  0001 C CNN
+	1    15350 6000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	14700 6000 15200 6000
+Wire Wire Line
+	15500 6000 15650 6000
+$Comp
+L Device:D D5
+U 1 1 62C9324A
+P 15350 5750
+F 0 "D5" H 15350 5533 50  0000 C CNN
+F 1 "1N4148" H 15350 5624 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 15350 5750 50  0001 C CNN
+F 3 "~" H 15350 5750 50  0001 C CNN
+	1    15350 5750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	15200 5750 15200 6000
+Connection ~ 15200 6000
+Wire Wire Line
+	15500 5750 15500 6000
+Connection ~ 15500 6000
+Text GLabel 3350 3900 2    50   Input ~ 0
+FS
+Text GLabel 15650 6000 2    50   Input ~ 0
+SOUND
 $EndSCHEMATC
