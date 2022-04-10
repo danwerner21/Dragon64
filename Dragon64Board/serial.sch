@@ -3,13 +3,13 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
-Title "Dragon CPU 64K (PAL)"
-Date "2020-12-21"
+Sheet 5 6
+Title "Dragon CPU 64K"
+Date "2022-04-09"
 Rev "4"
-Comp "Dragon Data Ltd."
-Comment1 "Transcribed by Ciaran Anscomb, 2020"
-Comment2 "Serial I/O"
+Comp "Originally by Dragon Data Ltd."
+Comment1 ""
+Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -142,28 +142,6 @@ F 3 "~" H 9450 4700 50  0001 C CNN
 	1    9450 4700
 	0    1    1    0   
 $EndComp
-$Comp
-L Connector:DIN-7 PL8
-U 1 1 5FDBEB27
-P 5750 4350
-F 0 "PL8" V 5796 4120 50  0000 R CNN
-F 1 "Serial" V 5705 4120 50  0000 R CNN
-F 2 "dragon64:DIN-7_DELTRON_671-0701_Horizontal" H 5750 4350 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 5750 4350 50  0001 C CNN
-	1    5750 4350
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+12V #PWR0242
-U 1 1 5FDCA08A
-P 5750 3350
-F 0 "#PWR0242" H 5750 3200 50  0001 C CNN
-F 1 "+12V" H 5765 3523 50  0000 C CNN
-F 2 "" H 5750 3350 50  0001 C CNN
-F 3 "" H 5750 3350 50  0001 C CNN
-	1    5750 3350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1200 2450 7200 2450
 Wire Wire Line
@@ -184,83 +162,24 @@ F 3 "" H 10000 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R10
-U 1 1 6061CCC5
-P 5750 3600
-F 0 "R10" H 5950 3550 50  0000 R CNN
-F 1 "4K7" H 5950 3650 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5680 3600 50  0001 C CNN
-F 3 "~" H 5750 3600 50  0001 C CNN
-	1    5750 3600
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5250 4350 5450 4350
-$Comp
 L power:GND #PWR0284
 U 1 1 5FDAE944
-P 5750 5450
-F 0 "#PWR0284" H 5750 5200 50  0001 C CNN
-F 1 "GND" H 5755 5277 50  0000 C CNN
-F 2 "" H 5750 5450 50  0001 C CNN
-F 3 "" H 5750 5450 50  0001 C CNN
-	1    5750 5450
+P 5150 3600
+F 0 "#PWR0284" H 5150 3350 50  0001 C CNN
+F 1 "GND" H 5155 3427 50  0000 C CNN
+F 2 "" H 5150 3600 50  0001 C CNN
+F 3 "" H 5150 3600 50  0001 C CNN
+	1    5150 3600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5750 5450 5750 4650
-Wire Wire Line
-	5750 3350 5750 3450
-Wire Wire Line
-	5850 4050 6350 4050
-Wire Wire Line
-	6350 4050 6350 5050
-Wire Wire Line
-	5750 4050 5750 3750
-Wire Wire Line
-	5650 4800 5650 4650
-Wire Wire Line
-	6650 4650 5850 4650
-Wire Wire Line
-	5100 3850 5650 3850
-Wire Wire Line
-	5650 3850 5650 4050
-Text Label 5900 4650 0    50   ~ 0
+Text Label 5600 3500 0    50   ~ 0
 TXD
-Text Label 5900 4050 0    50   ~ 0
-S-12V
-Text Label 5750 3850 0    50   ~ 0
-S+12V
-Text Label 5900 4800 0    50   ~ 0
+Text Label 5600 4000 0    50   ~ 0
 DTR
-Text Label 5250 4350 0    50   ~ 0
+Text Label 5600 3900 0    50   ~ 0
 RXD
-Text Label 5250 3850 0    50   ~ 0
+Text Label 5600 4200 0    50   ~ 0
 CTS
-Wire Wire Line
-	6350 5450 6350 5350
-$Comp
-L power:-12V #PWR0243
-U 1 1 5FDCA965
-P 6350 5450
-F 0 "#PWR0243" H 6350 5550 50  0001 C CNN
-F 1 "-12V" H 6365 5623 50  0000 C CNN
-F 2 "" H 6350 5450 50  0001 C CNN
-F 3 "" H 6350 5450 50  0001 C CNN
-	1    6350 5450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R9
-U 1 1 606298C4
-P 6350 5200
-F 0 "R9" H 6300 5150 50  0000 R CNN
-F 1 "4K7" H 6300 5250 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6280 5200 50  0001 C CNN
-F 3 "~" H 6350 5200 50  0001 C CNN
-	1    6350 5200
-	1    0    0    -1  
-$EndComp
 $Comp
 L Interface_UART:MAX232 U1
 U 1 1 61A16559
@@ -328,29 +247,11 @@ Wire Wire Line
 Wire Wire Line
 	4200 4800 5250 4800
 Wire Wire Line
-	5250 4800 5250 4350
-Wire Wire Line
-	5100 4600 5100 3850
+	5100 4600 5100 4200
 Wire Wire Line
 	4200 4600 5100 4600
 Wire Wire Line
-	6650 4650 6650 3000
-Wire Wire Line
-	6650 3000 5000 3000
-Wire Wire Line
-	5000 3000 5000 4200
-Wire Wire Line
-	5000 4200 4200 4200
-Wire Wire Line
-	6700 4800 6700 2950
-Wire Wire Line
-	6700 2950 4950 2950
-Wire Wire Line
-	4950 2950 4950 4400
-Wire Wire Line
 	4950 4400 4200 4400
-Wire Wire Line
-	5650 4800 6700 4800
 $Comp
 L Device:C_Polarized_Small_US C9
 U 1 1 61A2F156
@@ -376,13 +277,13 @@ $EndComp
 $Comp
 L Device:C_Polarized_Small_US C25
 U 1 1 61A2FF66
-P 4350 3850
-F 0 "C25" H 4441 3896 50  0000 L CNN
-F 1 "1u" H 4441 3805 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 4350 3850 50  0001 C CNN
-F 3 "~" H 4350 3850 50  0001 C CNN
-	1    4350 3850
-	1    0    0    -1  
+P 4450 4000
+F 0 "C25" V 4400 3750 50  0000 L CNN
+F 1 "1u" V 4500 3800 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 4450 4000 50  0001 C CNN
+F 3 "~" H 4450 4000 50  0001 C CNN
+	1    4450 4000
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	2600 3200 2350 3200
@@ -403,11 +304,7 @@ Wire Wire Line
 Wire Wire Line
 	4200 3700 4350 3700
 Wire Wire Line
-	4350 3700 4350 3750
-Wire Wire Line
 	4200 4000 4350 4000
-Wire Wire Line
-	4350 4000 4350 3950
 $Comp
 L Device:C_Polarized_Small_US C10
 U 1 1 61A3F84F
@@ -511,4 +408,68 @@ F 3 "" H 6700 1850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6900 1850 6700 1850
+$Comp
+L Device:C_Polarized_Small_US C54
+U 1 1 62BCA5E4
+P 4450 3700
+F 0 "C54" V 4500 3800 50  0000 L CNN
+F 1 "1u" V 4400 3800 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 4450 3700 50  0001 C CNN
+F 3 "~" H 4450 3700 50  0001 C CNN
+	1    4450 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4550 3700 4650 3700
+Wire Wire Line
+	4650 3700 4650 2900
+Wire Wire Line
+	4650 2900 3400 2900
+$Comp
+L power:GND #PWR0173
+U 1 1 62BD840C
+P 4700 4000
+F 0 "#PWR0173" H 4700 3750 50  0001 C CNN
+F 1 "GND" H 4700 4050 50  0000 C CNN
+F 2 "" H 4700 4000 50  0001 C CNN
+F 3 "" H 4700 4000 50  0001 C CNN
+	1    4700 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4000 4700 4000
+$Comp
+L Connector:DB9_Male J4
+U 1 1 62BEF8BA
+P 6200 3900
+F 0 "J4" H 6380 3946 50  0000 L CNN
+F 1 "DB9_Male" H 6380 3855 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 6200 3900 50  0001 C CNN
+F 3 " ~" H 6200 3900 50  0001 C CNN
+	1    6200 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4200 5100 4200
+Wire Wire Line
+	5900 3900 5250 3900
+Wire Wire Line
+	5250 3900 5250 4800
+Wire Wire Line
+	5900 3600 5150 3600
+Wire Wire Line
+	5900 4000 4950 4000
+Wire Wire Line
+	4950 4000 4950 4400
+Wire Wire Line
+	4800 3500 4800 4200
+Wire Wire Line
+	4800 4200 4200 4200
+Wire Wire Line
+	4800 3500 5900 3500
+NoConn ~ 5900 3700
+NoConn ~ 5900 3800
+NoConn ~ 5900 4100
+NoConn ~ 5900 4300
+NoConn ~ 4450 1900
 $EndSCHEMATC

@@ -3,13 +3,13 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 5
-Title "Dragon CPU 64K (PAL)"
-Date "2020-12-21"
+Sheet 4 6
+Title "Dragon CPU 64K"
+Date "2022-04-09"
 Rev "4"
-Comp "Dragon Data Ltd."
-Comment1 "Transcribed by Ciaran Anscomb, 2020"
-Comment2 "PIAs, I/O, analogue routing"
+Comp "Originally by Dragon Data Ltd."
+Comment1 ""
+Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -1754,8 +1754,6 @@ Wire Wire Line
 	12150 6150 11250 6150
 Text Label 11250 6150 2    50   ~ 0
 STY
-Text Notes 12000 950  0    50   ~ 0
-** L3, L4, C68, C69 OPTIONAL\nFOR SECOND JOYSTICK BUTTON
 Text Notes 9900 10550 2    39   ~ 0
 16V ELECTRO
 Text Label 10950 10300 2    50   ~ 0
@@ -1979,14 +1977,6 @@ Wire Wire Line
 	13850 2800 13850 3200
 Wire Wire Line
 	13850 1350 13850 2200
-Text Notes 12250 1250 0    50   ~ 0
-**
-Text Notes 12250 1350 0    50   ~ 0
-**
-Text Notes 11600 1650 0    50   ~ 0
-**
-Text Notes 12050 1650 0    50   ~ 0
-**
 Wire Wire Line
 	12000 2050 12000 1850
 $Comp

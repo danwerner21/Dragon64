@@ -3,13 +3,13 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 3 5
-Title "Dragon CPU 64K (PAL)"
-Date "2020-12-21"
+Sheet 3 6
+Title "Dragon CPU 64K"
+Date "2022-04-09"
 Rev "4"
-Comp "Dragon Data Ltd."
-Comment1 "Transcribed by Ciaran Anscomb, 2020"
-Comment2 "Video, including PAL logic"
+Comp "Originally by Dragon Data Ltd."
+Comment1 ""
+Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -250,7 +250,6 @@ F 3 "~" H 2350 10200 50  0001 C CNN
 	1    2350 10200
 	-1   0    0    -1  
 $EndComp
-NoConn ~ 2200 3150
 $Comp
 L power:GND #PWR?
 U 1 1 6008CF5E
@@ -286,8 +285,6 @@ F 3 "~" H 2650 10200 50  0001 C CNN
 	1    2650 10200
 	-1   0    0    -1  
 $EndComp
-Text Notes 2400 750  0    39   ~ 0
-ELECTRO
 $Comp
 L Device:C_Polarized_US C26
 U 1 1 6017EFED
@@ -311,7 +308,7 @@ U 1 1 62A195DB
 P 4100 2350
 F 0 "U2" H 4400 2515 50  0000 C CNN
 F 1 "MC1372" H 4400 2424 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 4950 2350 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 4950 2350 50  0001 C CNN
 F 3 "" H 4950 2350 50  0001 C CNN
 	1    4100 2350
 	1    0    0    -1  
@@ -549,7 +546,7 @@ U 1 1 62CFD957
 P 8300 3600
 F 0 "Q2" H 8490 3646 50  0000 L CNN
 F 1 "2N2222" H 8490 3555 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-18-3" H 8500 3700 50  0001 C CNN
+F 2 "logo:TO-18-3_FIXED" H 8500 3700 50  0001 C CNN
 F 3 "~" H 8300 3600 50  0001 C CNN
 	1    8300 3600
 	1    0    0    -1  
@@ -559,7 +556,7 @@ L Device:C_Polarized_US C36
 U 1 1 62CFF07D
 P 6150 3450
 F 0 "C36" V 5900 3450 50  0000 C CNN
-F 1 "100uf" V 6000 3450 50  0000 C CNN
+F 1 "47uf" V 6000 3450 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 6150 3450 50  0001 C CNN
 F 3 "~" H 6150 3450 50  0001 C CNN
 	1    6150 3450
@@ -569,7 +566,6 @@ Wire Wire Line
 	8400 2750 8400 3200
 Wire Wire Line
 	5350 2750 6450 2750
-NoConn ~ 5050 2850
 Wire Wire Line
 	5200 2950 6000 2950
 Connection ~ 5200 2950
@@ -608,7 +604,7 @@ L Device:C C37
 U 1 1 62D24C94
 P 7350 2900
 F 0 "C37" H 7200 2800 50  0000 R CNN
-F 1 "390pf" H 7200 2900 50  0000 R CNN
+F 1 "100pf" H 7200 2900 50  0000 R CNN
 F 2 "Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 7388 2750 50  0001 C CNN
 F 3 "~" H 7350 2900 50  0001 C CNN
 	1    7350 2900
@@ -632,7 +628,7 @@ U 1 1 62D39F4F
 P 6750 3450
 F 0 "Q1" H 6941 3496 50  0000 L CNN
 F 1 "BC557" H 6941 3405 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Wide" H 6950 3550 50  0001 C CNN
+F 2 "logo:TO-92_HandSolder_FIXED" H 6950 3550 50  0001 C CNN
 F 3 "~" H 6750 3450 50  0001 C CNN
 	1    6750 3450
 	1    0    0    -1  
@@ -725,7 +721,7 @@ U 1 1 62D828AF
 P 8350 5100
 F 0 "Q3" H 8540 5054 50  0000 L CNN
 F 1 "2N2222" H 8540 5145 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-18-3" H 8550 5200 50  0001 C CNN
+F 2 "logo:TO-18-3_FIXED" H 8550 5200 50  0001 C CNN
 F 3 "~" H 8350 5100 50  0001 C CNN
 	1    8350 5100
 	1    0    0    1   
@@ -738,7 +734,7 @@ Wire Wire Line
 Wire Wire Line
 	5300 5100 8150 5100
 Wire Wire Line
-	5300 3050 5300 5100
+	5300 3050 5300 3650
 $Comp
 L Device:R R31
 U 1 1 62D9A546
@@ -945,7 +941,215 @@ Connection ~ 950  10050
 Text GLabel 2450 3050 2    50   Input ~ 0
 FS
 Wire Wire Line
-	2200 3050 2450 3050
+	2200 3050 2300 3050
 Text GLabel 2700 1350 2    50   Input ~ 0
 DA0
+Wire Wire Line
+	2200 3150 2300 3150
+Wire Wire Line
+	2300 3150 2300 3050
+Connection ~ 2300 3050
+Wire Wire Line
+	2300 3050 2450 3050
+$Comp
+L Device:C C49
+U 1 1 62A76B63
+P 5450 3650
+F 0 "C49" V 5500 3600 50  0000 R CNN
+F 1 "0.1uf" V 5600 3650 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 5488 3500 50  0001 C CNN
+F 3 "~" H 5450 3650 50  0001 C CNN
+	1    5450 3650
+	0    -1   1    0   
+$EndComp
+Connection ~ 5300 3650
+Wire Wire Line
+	5300 3650 5300 5100
+$Comp
+L Device:R R43
+U 1 1 62A77624
+P 5600 3300
+F 0 "R43" H 5670 3346 50  0000 L CNN
+F 1 "750" H 5670 3255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5530 3300 50  0001 C CNN
+F 3 "~" H 5600 3300 50  0001 C CNN
+	1    5600 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3650 5600 3450
+Wire Wire Line
+	5600 3150 5600 2850
+Wire Wire Line
+	5600 2850 5050 2850
+$Comp
+L Device:C C55
+U 1 1 62D48742
+P 4600 10200
+F 0 "C55" H 4600 10400 50  0000 R CNN
+F 1 ".01u" H 4600 10300 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 4638 10050 50  0001 C CNN
+F 3 "~" H 4600 10200 50  0001 C CNN
+	1    4600 10200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C65
+U 1 1 62D48C92
+P 4850 10200
+F 0 "C65" H 4850 10400 50  0000 R CNN
+F 1 ".01u" H 4850 10300 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 4888 10050 50  0001 C CNN
+F 3 "~" H 4850 10200 50  0001 C CNN
+	1    4850 10200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C66
+U 1 1 62D4920F
+P 5100 10200
+F 0 "C66" H 5100 10400 50  0000 R CNN
+F 1 ".01u" H 5100 10300 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 5138 10050 50  0001 C CNN
+F 3 "~" H 5100 10200 50  0001 C CNN
+	1    5100 10200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C70
+U 1 1 62D49603
+P 5350 10200
+F 0 "C70" H 5350 10400 50  0000 R CNN
+F 1 ".01u" H 5350 10300 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 5388 10050 50  0001 C CNN
+F 3 "~" H 5350 10200 50  0001 C CNN
+	1    5350 10200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C71
+U 1 1 62D499C0
+P 5600 10200
+F 0 "C71" H 5600 10400 50  0000 R CNN
+F 1 ".01u" H 5600 10300 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 5638 10050 50  0001 C CNN
+F 3 "~" H 5600 10200 50  0001 C CNN
+	1    5600 10200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C72
+U 1 1 62D49EBE
+P 5850 10200
+F 0 "C72" H 5850 10400 50  0000 R CNN
+F 1 ".01u" H 5850 10300 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 5888 10050 50  0001 C CNN
+F 3 "~" H 5850 10200 50  0001 C CNN
+	1    5850 10200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C73
+U 1 1 62D4A2D2
+P 6100 10200
+F 0 "C73" H 6100 10400 50  0000 R CNN
+F 1 ".01u" H 6100 10300 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 6138 10050 50  0001 C CNN
+F 3 "~" H 6100 10200 50  0001 C CNN
+	1    6100 10200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C74
+U 1 1 62D4A6CE
+P 6350 10200
+F 0 "C74" H 6350 10400 50  0000 R CNN
+F 1 ".01u" H 6350 10300 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 6388 10050 50  0001 C CNN
+F 3 "~" H 6350 10200 50  0001 C CNN
+	1    6350 10200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C75
+U 1 1 62D4B1B4
+P 6600 10200
+F 0 "C75" H 6600 10400 50  0000 R CNN
+F 1 ".01u" H 6600 10300 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 6638 10050 50  0001 C CNN
+F 3 "~" H 6600 10200 50  0001 C CNN
+	1    6600 10200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C76
+U 1 1 62D4B4E5
+P 6900 10200
+F 0 "C76" H 6900 10400 50  0000 R CNN
+F 1 ".01u" H 6900 10300 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 6938 10050 50  0001 C CNN
+F 3 "~" H 6900 10200 50  0001 C CNN
+	1    6900 10200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 10350 4600 10350
+Connection ~ 4350 10350
+Wire Wire Line
+	4600 10350 4850 10350
+Connection ~ 4600 10350
+Wire Wire Line
+	4850 10350 5100 10350
+Connection ~ 4850 10350
+Wire Wire Line
+	5100 10350 5350 10350
+Connection ~ 5100 10350
+Wire Wire Line
+	5350 10350 5600 10350
+Connection ~ 5350 10350
+Wire Wire Line
+	5600 10350 5850 10350
+Connection ~ 5600 10350
+Wire Wire Line
+	5850 10350 6100 10350
+Connection ~ 5850 10350
+Wire Wire Line
+	6100 10350 6350 10350
+Connection ~ 6100 10350
+Wire Wire Line
+	6350 10350 6600 10350
+Connection ~ 6350 10350
+Wire Wire Line
+	6600 10350 6900 10350
+Connection ~ 6600 10350
+Wire Wire Line
+	6900 10050 6600 10050
+Wire Wire Line
+	6600 10050 6350 10050
+Connection ~ 6600 10050
+Wire Wire Line
+	6350 10050 6100 10050
+Connection ~ 6350 10050
+Wire Wire Line
+	6100 10050 5850 10050
+Connection ~ 6100 10050
+Wire Wire Line
+	5850 10050 5600 10050
+Connection ~ 5850 10050
+Wire Wire Line
+	5600 10050 5350 10050
+Connection ~ 5600 10050
+Wire Wire Line
+	5350 10050 5100 10050
+Connection ~ 5350 10050
+Wire Wire Line
+	5100 10050 4850 10050
+Connection ~ 5100 10050
+Wire Wire Line
+	4850 10050 4600 10050
+Connection ~ 4850 10050
+Wire Wire Line
+	4600 10050 4350 10050
+Connection ~ 4600 10050
+Connection ~ 4350 10050
 $EndSCHEMATC

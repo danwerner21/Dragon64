@@ -3,12 +3,12 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
-Title "Dragon CPU 64K (PAL)"
-Date "2020-12-21"
+Sheet 2 6
+Title "Dragon CPU 64K"
+Date "2022-04-09"
 Rev "4"
-Comp "Dragon Data Ltd."
-Comment1 "Transcribed by Ciaran Anscomb, 2020"
+Comp "Originally by Dragon Data Ltd."
+Comment1 ""
 Comment2 "RAM"
 Comment3 ""
 Comment4 ""
