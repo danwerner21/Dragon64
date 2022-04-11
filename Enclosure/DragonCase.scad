@@ -555,7 +555,7 @@ rotate([90,0,270])
 module KeyboardPCB()
 {
 rotate([80.55,0,270])
-    translate([-194,69,-260.5])
+    translate([-194,69,-259])
         color("Green",0.30)    
          import("keyboard.stl");   
 }
