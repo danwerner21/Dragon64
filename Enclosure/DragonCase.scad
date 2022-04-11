@@ -34,9 +34,9 @@ FootHole        = 4.75;  /* 4.4 for melt in 4.75 for glue in */
 
 /* [STL element to export] */
 //Top shell
-  TShell        = 1;// [0:No, 1:Yes]
+  TShell        = 0;// [0:No, 1:Yes]
 //Bottom shell
-  BShell        = 0;// [0:No, 1:Yes]
+  BShell        = 1;// [0:No, 1:Yes]
 // logo plate  
   RLogo         = 0;// [0:No, 1:Yes]
 // Show PCBs
@@ -467,12 +467,6 @@ module KeyboardCutoutReinforcement()
                                                 [332,38],[332,58],[350,58],[350,83],[336,83],[195,83],[195,102],
                                                 [78,102],[78,83],[8,83],[8,38],[31,38],[31,26],[20,26],[20,2]]
                , paths=[[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]]);  
-               
-               //           linear_extrude(height =5, center = false, convexity = 0, twist = 0)              
-                 //               polygon(points=[[-3,0],[291,0],[291,44],[294,44],[294,0],[337,0],[337,44],[291,44],[291,76],[294,76],[294,57],[319,57],[319,76],[338,76],[338,102],[275,102],[275,83],[266,83],[266,102],[-3,102]], paths=[[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]]); 
-     
-           
-               
        }              
      }
     }
@@ -486,16 +480,18 @@ module KeyboardFeet()
                        rotate(a=[8,0,270])
            { 
                // top row
-               translate([3*Thick+21,Thick-22.428,Thick/2]){foot(FootDia,FootHole,FootHeight+6);}
-               translate([3*Thick+156.5,Thick-22.428,Thick/2]){foot(FootDia,FootHole,FootHeight+6);}
+               translate([.8,-18.428,Thick/2]){foot(FootDia,FootHole,FootHeight+6);}
+               translate([135.8,-18.428,Thick/2]){foot(FootDia,FootHole,FootHeight+6);}
                
-               translate([3*Thick+284,Thick+8,Thick/2]){thinFoot(FootDia,FootHole,FootHeight+7  );}
+               translate([211.7,-10.128]){foot(FootDia,FootHole,FootHeight+8  );}
                
-               translate([3*Thick+312,Thick+46.4,Thick/2]){foot(FootDia,FootHole,FootHeight+7  );}
+               translate([344.5,3.8]){foot(FootDia,FootHole,FootHeight+8  );}
                
                //bottom row
-               translate([3*Thick+261.25,Thick+89.608,Thick/2]){foot(FootDia,FootHole,FootHeight+9);}
-               translate([3*Thick+21,Thick+89.608,Thick/2]){thinFoot(FootDia,FootHole,FootHeight+9);}
+               translate([344.3,91.5,Thick/2]){foot(FootDia,FootHole,FootHeight+9);}
+               translate([270.5,91.5,Thick/2]){foot(FootDia,FootHole,FootHeight+9);}
+               translate([.8,91.5,Thick/2]){foot(FootDia,FootHole,FootHeight+9);}
+               translate([203,91.5,Thick/2]){foot(FootDia,FootHole,FootHeight+9);}
                
                
                
