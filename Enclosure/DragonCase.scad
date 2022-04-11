@@ -29,18 +29,18 @@ PCBLength       = 142;
 PCBWidth        = 360;
 FootHeight      = 5;
 FootDia         = 8;
-FootHole        = 4.4;  
+FootHole        = 4.75;  /* 4.4 for melt in 4.75 for glue in */
   
 
 /* [STL element to export] */
 //Top shell
   TShell        = 1;// [0:No, 1:Yes]
 //Bottom shell
-  BShell        = 1;// [0:No, 1:Yes]
+  BShell        = 0;// [0:No, 1:Yes]
 // logo plate  
-  RLogo         = 0;// Logo
-
-
+  RLogo         = 0;// [0:No, 1:Yes]
+// Show PCBs
+  ShowPCB       = 1;// [0:No, 1:Yes]
   
 /* [Hidden] */
 Couleur1        = "Orange";       
@@ -117,9 +117,11 @@ module TopShell(){
                                             }                                            
                                       }
                                 }                                          
-
+                // These are the tabs that attach the top to the bottom
                 difference(){
                     union(){
+                        
+                        // four sides
                         translate([3*Thick +5,Thick,TopHeight]){
                             rotate([90,0,0]){
                                     $fn=6;
@@ -148,8 +150,25 @@ module TopShell(){
                                     }   
                             }
 
-
+                        // front and back
+                       translate([Length-Thick-0.5,(Width/2)-Thick/2-2.4,TopHeight]){
+                            rotate([90,0,90]){
+                                    $fn=6;
+                                    cylinder(d=16,Thick/2);
+                                    }   
+                            }
+                            
+                       translate([(Thick/2),(Width/2)-Thick/2-2.4,TopHeight]){
+                            rotate([90,0,90]){
+                                    $fn=6;
+                                    cylinder(d=16,Thick/2);
+                                    }   
+                            }
                         }
+
+
+
+
                             
                     } 
                     
@@ -183,7 +202,20 @@ module TopShell(){
                     cylinder(d=2,20);
                     }
                 }
-            }//fin de sides holes
+                
+                
+                translate([Thick/2,(Width/2)-Thick/2-2.4,TopHeight+4]){
+                    rotate([90,0,90]){
+                    cylinder(d=2,20);
+                    }
+                }
+                translate([Length-Thick-0.5,(Width/2)-Thick/2-2.4,TopHeight+4]){
+                    rotate([90,0,90]){
+                    cylinder(d=2,20);
+                    }
+                }
+                
+            }
 
          // IEC Opening    
             translate([-1,(Thick)+281,Thick-3]){
@@ -332,6 +364,19 @@ module BottomShell(){
                     cylinder(d=2,20);
                     }
                 }
+                
+               // front and back
+               translate([Length-Thick-0.5,(Width/2)-Thick/2+2.4,BottomHeight-4]){
+                 rotate([90,0,90]){
+                    cylinder(d=2,20);
+                    }
+                }
+                translate([0,(Width/2)-Thick/2+2.4,BottomHeight-4]){
+                 rotate([90,0,90]){
+                    cylinder(d=2,20);
+                    }
+                }
+
             }
         }
         }
@@ -397,13 +442,7 @@ module KeyboardCutout()
                                                 [296,78],[296,59],[317,59],[317,78],[336,78],[336,100],[277,100],
                                                 [277,81],[264,81],[264,100],[47,100],[47,81],[27,81],[27,100],[-1,100]]
                , paths=[[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]]);        
-               
-             //  linear_extrude(height =12, center = false, convexity = 0, twist = 0)              
-             //                   polygon(points=[[35.5,-26],[135.5,-26],[135.5,-4],[35.5,-4]], paths=[[0,1,2,3]]);        
-               
-             //  linear_extrude(height =12, center = false, convexity = 0, twist = 0)              
-               //                 polygon(points=[[-1,-26],[20,-26],[20,-4],[-1,-4]], paths=[[0,1,2,3]]);        
-               
+                     polygon(points=[[-1,-26],[20,-26],[20,-4],[-1,-4]], paths=[[0,1,2,3]]);        
            }
                             
 
@@ -425,18 +464,11 @@ module KeyboardCutoutReinforcement()
            { 
                           linear_extrude(height =5, center = false, convexity = 0, twist = 0)              
                                 polygon(points=[[-3,0],[291,0],[291,44],[294,44],[294,0],[337,0],[337,44],[291,44],[291,76],[294,76],[294,57],[319,57],[319,76],[338,76],[338,102],[275,102],[275,83],[266,83],[266,102],[-3,102]], paths=[[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]]); 
-               
-                          linear_extrude(height =5, center = false, convexity = 0, twist = 0)              
-                                polygon(points=[[33.5,-28],[137.5,-28],[137.5,-2],[33.5,-2]], paths=[[0,1,2,3]]);      
-                          
-                          linear_extrude(height =5, center = false, convexity = 0, twist = 0)              
-                                polygon(points=[[-3,-28],[22,-28],[22,-2],[-3,-2]], paths=[[0,1,2,3]]);        
+     
            }
-              
                
-               
-                            }              
-        }
+       }              
+     }
     }
 
 
@@ -467,18 +499,6 @@ module KeyboardFeet()
     }
 
 module BottomFeet(){     
-//////////////////// - PCB only visible in the preview mode - /////////////////////    
-    translate([3*Thick-3,Thick+9,FootHeight+(Thick/2)]){
-    
-    %square ([PCBL,PCBW]);
-       translate([PCBL/2,PCBW/2,0.5]){ 
-        color("Olive")
-        %text("PCB", halign="center", valign="center", font="Arial black");
-       }
-    } 
-
-
-
 
 //top 
     translate([(3*Thick)-6.125+FootDia,(Thick)+PCBW-7.625+FootDia,Thick/2-8.2]){
@@ -523,6 +543,22 @@ rotate([0,0,90])
 }
 
 
+module MainPCB()
+{
+rotate([90,0,270])
+    translate([-379,-192,-213])
+        color("Green",0.30)    
+            import("mainboard.stl");
+}
+
+
+module KeyboardPCB()
+{
+rotate([80.55,0,270])
+    translate([-194,69,-260.5])
+        color("Green",0.30)    
+         import("keyboard.stl");   
+}
 
 
 
@@ -543,7 +579,13 @@ if(BShell==1)
     }
 }
 
-
+if(ShowPCB==1)
+{
+    if(BShell==1)
+        MainPCB();
+    if(TShell==1)
+        KeyboardPCB();
+}
 if(TShell==1)
 {
     color( Couleur1,1){
@@ -563,5 +605,6 @@ if(RLogo==1)
             Logo();
         }
     }
+    
 } 
 
