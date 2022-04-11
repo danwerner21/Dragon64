@@ -503,29 +503,32 @@ module KeyboardFeet()
 module BottomFeet(){     
 
 //top 
-    translate([(3*Thick)-6.125+FootDia,(Thick)+PCBW-7.625+FootDia,Thick/2-8.2]){
-        foot(FootDia,FootHole,FootHeight+8.4);
-        }        
+    translate([31,340,Thick/2-8.2])foot(FootDia,FootHole,FootHeight+8.4);
+       
+    translate([10,228,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+8.4);
+    translate([11.4,260.3,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+8.4);
+    translate([11.4,325.5,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+8.4);
 
-    translate([(3*Thick)-6.125+FootDia,(Thick)+PCBW-354.275+FootDia,Thick/2-8.2]){
-        foot(FootDia,FootHole,FootHeight+8.4);
-        }        
+    translate([35,260.3,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+8.4);
+    translate([35,325.5,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+8.4);
+
+
+
+    translate([10,17,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+8.4);
+                
 
 
 // middle
-    translate([(3*Thick)+62.125-4.875+FootDia,(Thick)+PCBW-168.775+FootDia,Thick/2-8.2]){
-        foot(FootDia,FootHole,FootHeight+8.4);
-        }     
+        translate([127,340,Thick/2-8.2])foot(FootDia,FootHole,FootHeight+8.4);
+        translate([106.5,190.5,Thick/2-8.2])foot(FootDia,FootHole,FootHeight+8.4);
+        translate([127,17,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+8.4);
 
 
-//bottom
-    translate([(3*Thick)+130.625-5.875+FootDia,(Thick)+PCBW-7.625+FootDia,Thick/2-8.2]){
-        foot(FootDia,FootHole,FootHeight+8.4);
-        }        
+//bottom       
+        translate([206,340,Thick/2-8.2])foot(FootDia,FootHole,FootHeight+8.4);
 
-    translate([(3*Thick)+130.625-5.875+FootDia,(Thick)+PCBW-354.275+FootDia,Thick/2-8.2]){
-        foot(FootDia,FootHole,FootHeight+8.4);
-        }        
+        translate([206,17,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+8.4);
+
 
 }
 
