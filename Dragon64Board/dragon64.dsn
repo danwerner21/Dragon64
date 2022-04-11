@@ -61,19 +61,19 @@
   )
   (placement
     (component "Package_DIP:DIP-14_W7.62mm_Socket_LongPads"
-      (place X3 240350 -138130 front 0 (PN 4Mhz))
+      (place X3 237780 -132300 front 0 (PN 4Mhz))
       (place X1 130890 17950 front 0 (PN 14.31818Mhz))
-      (place U8 185510 -138630 front 0 (PN 74LS06N))
-      (place U6 277570 -109100 front 0 (PN 74LS04))
+      (place U8 182940 -132800 front 0 (PN 74LS06N))
+      (place U6 164080 -132270 front 0 (PN 74LS04))
       (place U4 311690 -88690 front 0 (PN 74LS07))
-      (place U3 253340 -109280 front 0 (PN 74LS00))
+      (place U3 221850 -132200 front 0 (PN 74LS00))
       (place U2 72340 1240 front 0 (PN MC1372))
       (place IC36 250516 -72074 front 0 (PN 74LS02))
       (place IC35 286800 -29744 front 0 (PN 74LS00))
       (place IC7 94770 -102964 front 0 (PN 4069))
     )
     (component "Package_DIP:DIP-40_W15.24mm"
-      (place U10 307430 -155420 front 270 (PN WD2797))
+      (place U10 304860 -149590 front 270 (PN WD2797))
     )
     (component "Package_DIP:DIP-16_W7.62mm_Socket_LongPads"
       (place U9 311980 -28840 front 0 (PN 74LS174))
@@ -92,21 +92,21 @@
       (place U1 42770.2 -50575 front 0 (PN MAX232))
     )
     (component "Package_DIP:DIP-28_W15.24mm_Socket_LongPads"
-      (place U5 286060 -57090 front 0 (PN 27C64))
+      (place U5 289450 -107890 front 270 (PN 27C64))
       (place IC37 219411 -10083 front 0 (PN 27C128))
       (place IC34 192453 -10083 front 0 (PN 27C128))
       (place IC11 83360 -42460 front 0 (PN 6551))
     )
     (component Potentiometer_THT:Potentiometer_Vishay_T73YP_Vertical
-      (place RV2 204170 -152780 front 0 (PN "10K-Write"))
-      (place RV1 213830 -152780 front 0 (PN "10K-Read"))
+      (place RV2 201600 -146950 front 0 (PN "10K-Write"))
+      (place RV1 211260 -146950 front 0 (PN "10K-Read"))
     )
     (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
       (place R48 318230 -158200 front 0 (PN 150))
       (place R47 318230 -142030 front 0 (PN 150))
       (place R46 325850 -133945 front 180 (PN 150))
       (place R45 325850 -125860 front 180 (PN 150))
-      (place R44 240250 -163300 front 0 (PN 1K))
+      (place R44 237680 -157470 front 0 (PN 1K))
       (place R10 318230 -150115 front 0 (PN 1K))
       (place R9 306680 -73310 front 90 (PN 10K))
       (place R43 84010 -23560 front 270 (PN 750))
@@ -172,14 +172,14 @@
       (place R1 14745 2175 front 180 (PN 100R))
     )
     (component "Connector_IDC:IDC-Header_2x17_P2.54mm_Vertical"
-      (place J6 187810 -167100 front 90 (PN "Floppy Interface"))
+      (place J6 177470 -164910 front 90 (PN "Floppy Interface"))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
       (place J5 264850 -59270 front 270 (PN "DISK ROM ENABLE"))
       (place J3 13440 12080 front 90 (PN "composite on luma"))
     )
     (component "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-      (place D8 247840 -159390 front 180 (PN 1N914))
+      (place D8 245270 -153560 front 180 (PN 1N914))
       (place D7 29610 850 front 0 (PN 1N4148))
       (place D6 29610 -2230 front 0 (PN 1N4148))
       (place D5 78240 -52140 front 270 (PN 1N4148))
@@ -193,16 +193,16 @@
       (place D2 23025 -39425 front 0 (PN "BZX 61"))
     )
     (component Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm
-      (place C78 240890 -167100 front 0 (PN 10nf))
+      (place C78 238320 -161270 front 0 (PN 10nf))
       (place C76 317850 -79300 front 180 (PN .01u))
       (place C75 317660 -83130 front 180 (PN .01u))
-      (place C74 259670 -102700 front 180 (PN .01u))
-      (place C73 241930 -132570 front 0 (PN .01u))
-      (place C72 283170 -103950 front 180 (PN .01u))
-      (place C71 260710 -142840 front 0 (PN .01u))
-      (place C70 191670 -131140 front 180 (PN .01u))
-      (place C66 305300 -142510 front 0 (PN .01u))
-      (place C65 290670 -52100 front 0 (PN .01u))
+      (place C74 228180 -125620 front 180 (PN .01u))
+      (place C73 239360 -126740 front 0 (PN .01u))
+      (place C72 169680 -127120 front 180 (PN .01u))
+      (place C71 258140 -137010 front 0 (PN .01u))
+      (place C70 189100 -125310 front 180 (PN .01u))
+      (place C66 312990 -167570 front 0 (PN .01u))
+      (place C65 294440 -112500 front 270 (PN .01u))
       (place C55 318170 -23820 front 180 (PN .01u))
       (place C49 78900 -19760 front 0 (PN 0.1uf))
       (place C48 22510 -10410 front 90 (PN 1u))
@@ -260,7 +260,7 @@
       (place C1 8435 6630 front 0 (PN .01u))
     )
     (component Capacitor_THT:C_Radial_D6.3mm_H7.0mm_P2.50mm
-      (place C77 273610 -143010 front 0 (PN "8-70pf"))
+      (place C77 271040 -137180 front 0 (PN "8-70pf"))
     )
     (component "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm"
       (place J4 190560 22010 front 180 (PN DB9_Male))
@@ -279,7 +279,7 @@
       (place C24 9375 -25814 front 0 (PN 1u))
       (place C10 9375 -38542 front 0 (PN 10u))
       (place C9 9375 -19450 front 0 (PN 1u))
-      (place C64 273420 -99530 front 180 (PN 4.7uf))
+      (place C64 245020 -105030 front 180 (PN 4.7uf))
       (place C63 231450 3825 front 0 (PN 100uf))
       (place C58 245270 -95800 front 180 (PN 4.7uf))
       (place C26 90070 10500 front 0 (PN 100uf))
@@ -331,7 +331,7 @@
       (place PL6 31775 24925 front 270 (PN Power/Video))
     )
     (component "Connector_Molex:Molex_Mini-Fit_Jr_5566-20A_2x10_P4.20mm_Vertical"
-      (place J1 99870 -165760 front 180 (PN ATX))
+      (place J1 145560 -166080 front 180 (PN ATX))
     )
     (component "dragon64:IDC-Header_2x10-1MP_P2.54mm_Latch_Horizontal"
       (place PL2 48925 21825 front 90 (PN Printer))
@@ -2704,60 +2704,44 @@
     (net "Net-(U10-Pad24)"
       (pins X3-3 U10-24)
     )
-    (class kicad_default "" -12V /A0 /A1 /A10 /A11 /A12 /A13 /A14 /A15 /A2
-      /A3 /A4 /A5 /A6 /A7 /A8 /A9 /CART /D0 /D1 /D2 /D3 /D4 /D5 /D6 /D7 /E
-      /ESND /EXTMEM /P0 /P1 /P2 /PIAs/CASIN /PIAs/CASOUT /PIAs/CSS /PIAs/DAC
-      /PIAs/DAC0 /PIAs/DAC1 /PIAs/DAC2 /PIAs/DAC3 /PIAs/DAC4 /PIAs/DAC5 /PIAs/GM0
-      /PIAs/GM1 /PIAs/GM2 /PIAs/JCMP /PIAs/JL_F1 /PIAs/JL_F2 /PIAs/JL_X /PIAs/JL_Y
-      /PIAs/JR_F1 /PIAs/JR_F2 /PIAs/JR_X /PIAs/JR_Y /PIAs/KC0 /PIAs/KC1 /PIAs/KC2
-      /PIAs/KC3 /PIAs/KC4 /PIAs/KC5 /PIAs/KC6 /PIAs/KC7 /PIAs/KR0 /PIAs/KR1
-      /PIAs/KR2 /PIAs/KR3 /PIAs/KR4 /PIAs/KR5 /PIAs/KR6 /PIAs/MOTOR /PIAs/MUXA
-      /PIAs/MUXB /PIAs/MUXZ /PIAs/PR0 /PIAs/PR1 /PIAs/PR2 /PIAs/PR3 /PIAs/PR4
-      /PIAs/PR5 /PIAs/PR6 /PIAs/PR7 /PIAs/SBS /PIAs/STROBE /PIAs/STY /PIAs/TAPE
-      /PIAs/TSND /PIAs/~A2 /PIAs/~ACK /PIAs/~A~G /PIAs/~BUSY /Q /RAM /RAM/DD0
-      /RAM/DD1 /RAM/DD2 /RAM/DD3 /RAM/DD4 /RAM/DD5 /RAM/DD6 /RAM/DD7 /RAM/DO0
-      /RAM/DO1 /RAM/DO2 /RAM/DO3 /RAM/DO4 /RAM/DO5 /RAM/DO6 /RAM/DO7 /ROM0
-      /ROM1 /ROM2 /ROMSEL /R~W~ /S0 /S1 /S2 /Serial/CTS /Serial/DTR /Serial/RXD
-      /Serial/TXD /Z0 /Z1 /Z2 /Z3 /Z4 /Z5 /Z6 /Z7 /~CAS /~FIRQ /~HALT /~IRQ
-      /~NMI /~RAS0 /~RESET /~WE A0 A1 A10 A11 A12 A2 A3 A4 A5 A6 A7 A8 A9
-      CART CHROMA D0 D1 D2 D3 D4 D5 D6 D7 DA0 DDEN DINT1 DINT2 DIRC DISKIP
-      DISKMOTOR DISKRAWRD DISKWPRT DS0 DS1 DS2 DS3 E ENP FS HS LUMA "Net-(C23-Pad2)"
-      "Net-(C24-Pad1)" "Net-(C24-Pad2)" "Net-(C25-Pad2)" "Net-(C36-Pad2)"
-      "Net-(C37-Pad2)" "Net-(C44-Pad1)" "Net-(C49-Pad1)" "Net-(C49-Pad2)"
-      "Net-(C54-Pad1)" "Net-(C77-Pad1)" "Net-(C9-Pad1)" "Net-(C9-Pad2)" "Net-(D12-Pad1)"
-      "Net-(D4-Pad1)" "Net-(D4-Pad2)" "Net-(D5-Pad2)" "Net-(D8-Pad1)" "Net-(IC10-Pad13)"
-      "Net-(IC10-Pad14)" "Net-(IC10-Pad15)" "Net-(IC10-Pad16)" "Net-(IC10-Pad18)"
-      "Net-(IC10-Pad19)" "Net-(IC10-Pad20)" "Net-(IC10-Pad21)" "Net-(IC10-Pad23)"
-      "Net-(IC10-Pad24)" "Net-(IC10-Pad25)" "Net-(IC10-Pad26)" "Net-(IC10-Pad36)"
-      "Net-(IC11-Pad10)" "Net-(IC11-Pad11)" "Net-(IC11-Pad12)" "Net-(IC11-Pad5)"
-      "Net-(IC11-Pad6)" "Net-(IC11-Pad7)" "Net-(IC11-Pad8)" "Net-(IC11-Pad9)"
-      "Net-(IC15-Pad1)" "Net-(IC16-Pad1)" "Net-(IC2-Pad2)" "Net-(IC2-Pad3)"
-      "Net-(IC2-Pad5)" "Net-(IC21-Pad1)" "Net-(IC22-Pad1)" "Net-(IC26-Pad1)"
-      "Net-(IC27-Pad1)" "Net-(IC32-Pad1)" "Net-(IC33-Pad1)" "Net-(IC35-Pad1)"
+    (class kicad_default "" /A13 /A14 /A15 /D0 /D1 /D2 /D3 /D4 /D5 /D6 /D7
+      /ESND /EXTMEM /P0 /P1 /PIAs/CASIN /PIAs/CASOUT /PIAs/CSS /PIAs/DAC /PIAs/DAC0
+      /PIAs/DAC1 /PIAs/DAC2 /PIAs/DAC3 /PIAs/DAC4 /PIAs/DAC5 /PIAs/GM0 /PIAs/GM1
+      /PIAs/GM2 /PIAs/JCMP /PIAs/JL_F1 /PIAs/JL_F2 /PIAs/JL_X /PIAs/JL_Y /PIAs/JR_F1
+      /PIAs/JR_F2 /PIAs/JR_X /PIAs/JR_Y /PIAs/KC0 /PIAs/KC1 /PIAs/KC2 /PIAs/KC3
+      /PIAs/KC4 /PIAs/KC5 /PIAs/KC6 /PIAs/KC7 /PIAs/KR0 /PIAs/KR1 /PIAs/KR2
+      /PIAs/KR3 /PIAs/KR4 /PIAs/KR5 /PIAs/KR6 /PIAs/MOTOR /PIAs/MUXA /PIAs/MUXB
+      /PIAs/MUXZ /PIAs/PR0 /PIAs/PR1 /PIAs/PR2 /PIAs/PR3 /PIAs/PR4 /PIAs/PR5
+      /PIAs/PR6 /PIAs/PR7 /PIAs/SBS /PIAs/STROBE /PIAs/STY /PIAs/TAPE /PIAs/TSND
+      /PIAs/~A2 /PIAs/~ACK /PIAs/~A~G /PIAs/~BUSY /RAM /RAM/DD0 /RAM/DD1 /RAM/DD2
+      /RAM/DD3 /RAM/DD4 /RAM/DD5 /RAM/DD6 /RAM/DD7 /RAM/DO0 /RAM/DO1 /RAM/DO2
+      /RAM/DO3 /RAM/DO4 /RAM/DO5 /RAM/DO6 /RAM/DO7 /ROM0 /ROM1 /ROMSEL /S0
+      /S1 /S2 /Serial/CTS /Serial/DTR /Serial/RXD /Serial/TXD /Z0 /Z1 /Z2
+      /Z3 /Z4 /Z5 /Z6 /Z7 /~CAS /~FIRQ /~HALT /~IRQ /~RAS0 /~WE A0 A1 A10
+      A11 A12 A2 A3 A4 A5 A6 A7 A8 A9 CART CHROMA D0 D1 D2 D3 D4 D5 D6 D7
+      DA0 DDEN DINT1 DINT2 DIRC DISKIP DISKMOTOR DISKRAWRD DISKWPRT DS0 DS1
+      DS2 DS3 E ENP FS HS LUMA "Net-(C23-Pad2)" "Net-(C24-Pad1)" "Net-(C24-Pad2)"
+      "Net-(C25-Pad2)" "Net-(C36-Pad2)" "Net-(C37-Pad2)" "Net-(C44-Pad1)"
+      "Net-(C49-Pad1)" "Net-(C49-Pad2)" "Net-(C54-Pad1)" "Net-(C77-Pad1)"
+      "Net-(C9-Pad1)" "Net-(C9-Pad2)" "Net-(D12-Pad1)" "Net-(D4-Pad1)" "Net-(D4-Pad2)"
+      "Net-(D5-Pad2)" "Net-(D8-Pad1)" "Net-(IC11-Pad10)" "Net-(IC11-Pad11)"
+      "Net-(IC11-Pad12)" "Net-(IC11-Pad6)" "Net-(IC11-Pad7)" "Net-(IC11-Pad9)"
+      "Net-(IC2-Pad2)" "Net-(IC2-Pad3)" "Net-(IC2-Pad5)" "Net-(IC35-Pad1)"
       "Net-(IC35-Pad10)" "Net-(IC35-Pad13)" "Net-(IC35-Pad4)" "Net-(IC35-Pad5)"
       "Net-(IC36-Pad1)" "Net-(IC36-Pad13)" "Net-(IC36-Pad2)" "Net-(IC36-Pad4)"
-      "Net-(IC36-Pad8)" "Net-(IC38-Pad33)" "Net-(IC38-Pad36)" "Net-(IC38-Pad38)"
-      "Net-(IC38-Pad5)" "Net-(IC38-Pad6)" "Net-(IC39-Pad10)" "Net-(IC39-Pad11)"
-      "Net-(IC39-Pad12)" "Net-(IC39-Pad28)" "Net-(IC39-Pad29)" "Net-(IC39-Pad30)"
-      "Net-(IC39-Pad31)" "Net-(IC39-Pad32)" "Net-(IC39-Pad33)" "Net-(IC39-Pad34)"
-      "Net-(IC39-Pad6)" "Net-(IC4-Pad10)" "Net-(IC4-Pad12)" "Net-(IC4-Pad13)"
-      "Net-(IC4-Pad15)" "Net-(IC4-Pad16)" "Net-(IC4-Pad2)" "Net-(IC4-Pad4)"
-      "Net-(IC4-Pad6)" "Net-(IC40-Pad7)" "Net-(IC7-Pad10)" "Net-(IC7-Pad12)"
-      "Net-(IC7-Pad2)" "Net-(IC7-Pad4)" "Net-(IC7-Pad6)" "Net-(J1-Pad1)" "Net-(J1-Pad18)"
-      "Net-(J1-Pad8)" "Net-(J1-Pad9)" "Net-(J4-Pad1)" "Net-(J4-Pad2)" "Net-(J4-Pad4)"
-      "Net-(J4-Pad8)" "Net-(J5-Pad1)" "Net-(J6-Pad2)" "Net-(J6-Pad34)" "Net-(J6-Pad4)"
-      "Net-(LK1-Pad2)" "Net-(PL6-Pad2)" "Net-(Q1-Pad3)" "Net-(R10-Pad1)" "Net-(R2-Pad2)"
-      "Net-(R43-Pad1)" "Net-(RLA1-Pad7)" "Net-(RV1-Pad2)" "Net-(RV2-Pad2)"
-      "Net-(U10-Pad15)" "Net-(U10-Pad16)" "Net-(U10-Pad2)" "Net-(U10-Pad24)"
-      "Net-(U10-Pad25)" "Net-(U10-Pad28)" "Net-(U10-Pad29)" "Net-(U10-Pad30)"
-      "Net-(U10-Pad31)" "Net-(U10-Pad4)" "Net-(U10-Pad40)" "Net-(U2-Pad1)"
-      "Net-(U2-Pad12)" "Net-(U2-Pad3)" "Net-(U3-Pad11)" "Net-(U3-Pad2)" "Net-(U3-Pad3)"
-      "Net-(U3-Pad5)" "Net-(U3-Pad9)" "Net-(U4-Pad1)" "Net-(U4-Pad12)" "Net-(U4-Pad13)"
-      "Net-(U4-Pad3)" "Net-(U4-Pad5)" "Net-(U4-Pad9)" "Net-(U5-Pad26)" "Net-(U6-Pad1)"
-      "Net-(U6-Pad3)" "Net-(U6-Pad5)" "Net-(U6-Pad9)" "Net-(U7-Pad13)" "Net-(U7-Pad14)"
-      "Net-(U7-Pad7)" "Net-(U8-Pad12)" "Net-(U8-Pad13)" "Net-(X1-Pad1)" "Net-(X3-Pad1)"
-      P2 Q RES_IN ROM2 R~W~ SOUND SSO STEP TR00 VCLK VCLK1 WD WG atx_on ~NMI
-      ~RESET
+      "Net-(IC36-Pad8)" "Net-(IC39-Pad10)" "Net-(IC39-Pad11)" "Net-(IC39-Pad12)"
+      "Net-(IC39-Pad28)" "Net-(IC39-Pad29)" "Net-(IC39-Pad30)" "Net-(IC39-Pad31)"
+      "Net-(IC39-Pad32)" "Net-(IC39-Pad33)" "Net-(IC39-Pad34)" "Net-(IC39-Pad6)"
+      "Net-(IC4-Pad10)" "Net-(IC4-Pad12)" "Net-(IC4-Pad15)" "Net-(IC4-Pad2)"
+      "Net-(IC4-Pad4)" "Net-(IC4-Pad6)" "Net-(J1-Pad1)" "Net-(J5-Pad1)" "Net-(LK1-Pad2)"
+      "Net-(PL6-Pad2)" "Net-(Q1-Pad3)" "Net-(R10-Pad1)" "Net-(R2-Pad2)" "Net-(R43-Pad1)"
+      "Net-(RV1-Pad2)" "Net-(RV2-Pad2)" "Net-(U10-Pad15)" "Net-(U10-Pad16)"
+      "Net-(U10-Pad2)" "Net-(U10-Pad24)" "Net-(U10-Pad25)" "Net-(U10-Pad30)"
+      "Net-(U10-Pad31)" "Net-(U10-Pad4)" "Net-(U3-Pad11)" "Net-(U3-Pad2)"
+      "Net-(U3-Pad3)" "Net-(U3-Pad5)" "Net-(U3-Pad9)" "Net-(U4-Pad1)" "Net-(U4-Pad3)"
+      "Net-(U4-Pad5)" "Net-(U4-Pad9)" "Net-(U6-Pad1)" "Net-(U6-Pad3)" "Net-(U6-Pad5)"
+      "Net-(U6-Pad9)" "Net-(U7-Pad13)" "Net-(U7-Pad14)" P2 Q RES_IN ROM2 R~W~
+      SOUND SSO STEP TR00 VCLK VCLK1 WD WG atx_on ~NMI ~RESET
       (circuit
         (use_via Via[0-1]_800:400_um)
       )

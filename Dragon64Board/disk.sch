@@ -1480,4 +1480,6 @@ F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 4050 6900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 4350 6900
+Text Notes 1800 6250 0    157  ~ 0
+DISK CONTROLLER IS OPTIONAL\nIF NOT NEEDED, DO NOT POPULATE THIS SHEET
 $EndSCHEMATC

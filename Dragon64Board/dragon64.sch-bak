@@ -2371,7 +2371,7 @@ U 1 1 6259E662
 P 5500 3950
 F 0 "X1" H 5200 4300 50  0000 L CNN
 F 1 "14.31818Mhz" H 4850 4200 50  0000 L CNN
-F 2 "Oscillator:Oscillator_DIP-14" H 5950 3600 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5950 3600 50  0001 C CNN
 F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf" H 5400 3950 50  0001 C CNN
 	1    5500 3950
 	1    0    0    -1  

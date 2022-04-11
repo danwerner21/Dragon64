@@ -566,7 +566,7 @@ U 1 1 630456A4
 P 5950 1650
 F 0 "X3" H 6294 1696 50  0000 L CNN
 F 1 "4Mhz" H 6294 1605 50  0000 L CNN
-F 2 "Oscillator:Oscillator_SMD_EuroQuartz_XO91-4Pin_7.0x5.0mm" H 6650 1300 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 6650 1300 50  0001 C CNN
 F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/XO91.pdf" H 5850 1650 50  0001 C CNN
 	1    5950 1650
 	1    0    0    -1  
