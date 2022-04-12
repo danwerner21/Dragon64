@@ -34,11 +34,9 @@ FootHole        = 4.75;  /* 4.4 for melt in 4.75 for glue in */
 
 /* [STL element to export] */
 //Top shell
-  TShell        = 0;// [0:No, 1:Yes]
+  TShell        = 1;// [0:No, 1:Yes]
 //Bottom shell
   BShell        = 1;// [0:No, 1:Yes]
-// logo plate  
-  RLogo         = 0;// [0:No, 1:Yes]
 // Show PCBs
   ShowPCB       = 1;// [0:No, 1:Yes]
   
@@ -217,26 +215,34 @@ module TopShell(){
                 
             }
 
-         // IEC Opening    
-            translate([-1,(Thick)+281,Thick-3]){
-              cube([21,21,BottomHeight-7]);
+         // Serial Opening    
+            translate([-1,(Thick)+245,Thick]){
+              cube([18,18,BottomHeight-9]);
             }   
+            
+        // Joystick Opening    
+            translate([97,20,Thick]){    
+              cube([18,Width+2,BottomHeight-9]);
+            }
+            translate([138,20,Thick]){    
+              cube([18,Width+2,BottomHeight-9]);
+            }
 
          // Power Switch Opening    
-            translate([-1,(Thick)+31,Thick-13]){
-              cube([13,20,13]);
+            translate([45,Thick-10,Thick-13]){
+              cube([20,13,13]);
             }   
 
 
          // Reset Switch Opening    
-            translate([-1,(Thick)+65,Thick-7]){
-             rotate([0,90,0])
+            translate([85,(Thick),Thick-7]){
+             rotate([90,0,0])
                     cylinder(d=7,20);
             }   
 
 
         // Power Jack Opening    
-            translate([-1,(Thick)+95,Thick-7]){
+            translate([-1,(Thick)+355,Thick-7]){
              rotate([0,90,0])
                     cylinder(d=11,20);
             }   
@@ -246,7 +252,11 @@ module TopShell(){
         }//fin de difference holes
         KeyboardFeet();
         
-
+   // Reset Switch Opening    
+          //  translate([85,(Thick),Thick-7]){
+           //  rotate([90,0,0])
+             //       cylinder(d=7,20);
+            //}   
         
         
 
@@ -302,24 +312,34 @@ module BottomShell(){
                 
         
             // Joystick Opening    
-            translate([53,Width-Dec_size-2,Thick]){    
-              cube([75,Dec_Thick+2,BottomHeight-5]);
+            translate([97,-2,Thick]){    
+              cube([18,Dec_Thick+2,BottomHeight-5]);
             }
+            translate([138,-2,Thick]){    
+              cube([18,Dec_Thick+2,BottomHeight-5]);
+            }
+
                 
 
             // expansion Opening    
-            translate([-1,(Thick)+270,Thick]){
-              cube([12,70,BottomHeight-3]);
+            translate([-1,(Thick)+225.0,Thick-3]){
+              cube([12,116,BottomHeight]);
             }   
 
             // Serial Opening    
-            translate([-1,(Thick)+124,Thick]){
+            translate([-1,(Thick)+136,Thick]){
               cube([12,25,BottomHeight-3]);
             } 
+            
+           // Serial Opening    
+            translate([-1,(Thick)+108,Thick]){
+              cube([12,18,BottomHeight-3]);
+            } 
 
-            // Video, Audio, IEC Opening    
-            translate([-1,(Thick)+25,Thick]){
-              cube([21,65,BottomHeight-3]);
+
+            // printer Opening    
+            translate([-1,(Thick)+42,Thick]){
+              cube([21,45,BottomHeight-3]);
             }   
 
     
@@ -506,11 +526,12 @@ module BottomFeet(){
     translate([31,340,Thick/2-8.2])foot(FootDia,FootHole,FootHeight+8.4);
        
     translate([10,228,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+8.4);
+    
     translate([11.4,260.3,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+8.4);
-    translate([11.4,325.5,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+8.4);
+    translate([11.4,325,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+8.4);
 
-    translate([35,260.3,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+8.4);
-    translate([35,325.5,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+8.4);
+    translate([33.5,260.3,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+8.4);
+    translate([33.5,325,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+8.4);
 
 
 
@@ -530,21 +551,6 @@ module BottomFeet(){
         translate([206,17,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+8.4);
 
 
-}
-
-module Logo()
-{
-    
-    
-union() {
-scale([.65,.65, .65])
-rotate([0,0,90])
-    linear_extrude(height =4, center = false, convexity = 0, twist = 0)
-               import(file = "n:/Projects/WE816/Support/logo.svg", center = true);    
-    translate([-7,-25,0])
-     cube([14,50,1.5]);
-}
-    
 }
 
 
@@ -603,13 +609,4 @@ if(TShell==1)
  
 }
 
-if(RLogo==1)
-{
-    color( Couleur2,1){
-        translate([-30,-30,0]){
-            Logo();
-        }
-    }
-    
-} 
 

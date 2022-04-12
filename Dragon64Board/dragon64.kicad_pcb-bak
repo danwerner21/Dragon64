@@ -1982,7 +1982,7 @@
   )
 
   (module Connector_IDC:IDC-Header_2x17_P2.54mm_Vertical (layer F.Cu) (tedit 59DE1241) (tstamp 6253D529)
-    (at 185.24 161.27 90)
+    (at 177.47 164.91 90)
     (descr "Through hole straight IDC box header, 2x17, 2.54mm pitch, double rows")
     (tags "Through hole IDC box header THT 2x17 2.54mm double row")
     (path /62D1E9EB/62D331C8)
