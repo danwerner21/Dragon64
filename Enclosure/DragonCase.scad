@@ -36,9 +36,9 @@ FootHole        = 4.75;  /* 4.4 for melt in 4.75 for glue in */
 //Top shell
   TShell        = 1;// [0:No, 1:Yes]
 //Bottom shell
-  BShell        = 1;// [0:No, 1:Yes]
+  BShell        = 0;// [0:No, 1:Yes]
 // Show PCBs
-  ShowPCB       = 1;// [0:No, 1:Yes]
+  ShowPCB       = 0;// [0:No, 1:Yes]
   
 /* [Hidden] */
 Couleur1        = "Orange";       
@@ -245,7 +245,24 @@ module TopShell(){
             translate([-1,(Thick)+355,Thick-7]){
              rotate([0,90,0])
                     cylinder(d=11,20);
+            }
+                
+       
+        // Audio and Video RCA Jack Openings    
+            translate([-1,(Thick)+305,Thick-7]){
+             rotate([0,90,0])
+                    cylinder(d=6,20);
             }   
+             translate([-1,(Thick)+320,Thick-7]){
+             rotate([0,90,0])
+                    cylinder(d=6,20);
+            }   
+             translate([-1,(Thick)+335,Thick-7]){
+             rotate([0,90,0])
+                    cylinder(d=6,20);
+            }   
+
+
 
         KeyboardCutout();
 
