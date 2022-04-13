@@ -34,9 +34,9 @@ FootHole        = 4.75;  /* 4.4 for melt in 4.75 for glue in */
 
 /* [STL element to export] */
 //Top shell
-  TShell        = 1;// [0:No, 1:Yes]
+  TShell        = 0;// [0:No, 1:Yes]
 //Bottom shell
-  BShell        = 0;// [0:No, 1:Yes]
+  BShell        = 1;// [0:No, 1:Yes]
 // Show PCBs
   ShowPCB       = 0;// [0:No, 1:Yes]
   
@@ -553,8 +553,6 @@ module BottomFeet(){
 
 
     translate([10,17,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+8.4);
-                
-
 
 // middle
         translate([127,340,Thick/2-8.2])foot(FootDia,FootHole,FootHeight+8.4);
@@ -564,10 +562,12 @@ module BottomFeet(){
 
 //bottom       
         translate([206,340,Thick/2-8.2])foot(FootDia,FootHole,FootHeight+8.4);
-
         translate([206,17,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+8.4);
 
 
+// Power Supply
+        translate([235,166,Thick/2-8.2])foot(FootDia,FootHole,FootHeight+3.4);
+        translate([235,20,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+3.4);
 }
 
 
@@ -587,6 +587,16 @@ rotate([80.55,0,270])
         color("Green",0.30)    
          import("keyboard.stl");   
 }
+
+
+module PowerSupplyPCB()
+{
+rotate([90,90,0])
+    translate([-13,218,-170])
+        color("Green",0.30)    
+         cube([18,35,154]); 
+}
+
 
 
 
@@ -610,7 +620,10 @@ if(BShell==1)
 if(ShowPCB==1)
 {
     if(BShell==1)
+    {
         MainPCB();
+        PowerSupplyPCB();
+    }
     if(TShell==1)
         KeyboardPCB();
 }
