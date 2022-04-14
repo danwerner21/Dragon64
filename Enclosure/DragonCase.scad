@@ -34,11 +34,11 @@ FootHole        = 4.75;  /* 4.4 for melt in 4.75 for glue in */
 
 /* [STL element to export] */
 //Top shell
-  TShell        = 0;// [0:No, 1:Yes]
+  TShell        = 1;// [0:No, 1:Yes]
 //Bottom shell
   BShell        = 1;// [0:No, 1:Yes]
 // Show PCBs
-  ShowPCB       = 0;// [0:No, 1:Yes]
+  ShowPCB       = 1;// [0:No, 1:Yes]
   
 /* [Hidden] */
 Couleur1        = "Orange";       
@@ -359,7 +359,13 @@ module BottomShell(){
               cube([21,45,BottomHeight-3]);
             }   
 
-    
+            // fLOPPY Opening    
+              translate([138,350,-10]){    
+              cube([60,13,BottomHeight-5]);
+            }
+
+            
+            
             // Glamour Line
         
             translate([Length-1,0,BottomHeight-1.25]){
