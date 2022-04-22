@@ -69,7 +69,7 @@ QTY|ref|value|part|description
 --------|--------|----|--------|--------
 1|IC4|4050|4050|
 1|IC7|4069|4069|Hex inverter
-8|IC15,IC16,IC21,IC22,IC26,IC27,IC32,IC33,4164|4164|
+8|IC15,IC16,IC21,IC22,IC26,IC27,IC32,IC33|4164|4164|
 1|IC6|4529|4529|
 1|IC11|6551|6551|
 2|IC5,IC8|6821|6821|Peripheral Interface Adapter 1MHz| DIP-40
