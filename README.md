@@ -183,12 +183,12 @@ QTY|ref|value|part|description
 2|J1,J2|01X16 HEADER|Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical
 
 ### Case
-T
-![System](Support/images/pic1.jpg)
-![System](Support/images/pic2.jpg)
-![System](Support/images/pic3.jpg)
-![System](Support/images/pic4.jpg)
-![System](Support/images/pic5.jpg)
+
+![System](images/pic1.jpg)
+![System](images/pic2.jpg)
+![System](images/pic3.jpg)
+![System](images/pic4.jpg)
+![System](images/pic5.jpg)
 
 ### Questions?
 
