@@ -69,7 +69,7 @@ QTY|ref|value|part|description
 --------|--------|----|--------|--------
 1|IC4|4050|4050|
 1|IC7|4069|4069|Hex inverter
-8|IC15,IC16,IC21,IC22,IC26,IC27,IC32,IC33|4164|4164|
+8|IC15, IC16, IC21, IC22, IC26, IC27, IC32, IC33|4164|4164|
 1|IC6|4529|4529|
 1|IC11|6551|6551|
 2|IC5,IC8|6821|6821|Peripheral Interface Adapter 1MHz| DIP-40
@@ -90,9 +90,9 @@ QTY|ref|value|part|description
 1|IC20|74LS273|74LS273|8-bit D Flip-Flop| reset
 1|J1|ATX|ATX-20|ATX Power supply 20pins
 1|C3|.002u|C|Unpolarized capacitor
-37|C1,C7,C11,C12,C18,C20,C21,C22,C29,C31,C32,C34,C38,C39,C40,C41,C42,C43,C45,C46,C47,C50,C51,C52,C53,C55,C56,C57,C62,C65,C66,C70,C71,C72,C73,C74,C75,C76|.01u|C|Unpolarized capacitor
+37|C1, C7, C11, C12, C18, C20, C21, C22, C29, C31, C32, C34, C38, C39, C40, C41, C42, C43, C45, C46, C47, C50, C51, C52, C53, C55, C56, C57, C62, C65, C66, C70, C71, C72, C73, C74, C75, C76|.01u|C|Unpolarized capacitor
 5|C6,C13,C14,C15,C16|.02u|C|Unpolarized capacitor
-11|C2,C27,C33,C4,C49,C5,C59,C60,C61,C68,C69|.1u|C|Unpolarized capacitor
+11|C2, C27, C33, C4, C49, C5, C59, C60, C61, C68, C69|.1u|C|Unpolarized capacitor
 2|C33,C49|0.1uf|C|Unpolarized capacitor
 1|C37|100pf|C|Unpolarized capacitor
 1|C78|10nf|C|Unpolarized capacitor
