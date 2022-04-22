@@ -3,7 +3,7 @@
 
 # Dragon 64 Clone PCB
 
-The Dragon 64 are home computers that were built in the 1980s for the European market by Dragon Data, Ltd. The Dragons are very similar to the TRS-80 Color Computer, and in fact provisions have been made on this board to use a version of the TRS-80 color computer ROM and a different plug on the keyboard PCB to allow it to become a reasonably compatible TRS-80 color computer clone.   This version of the Dragon 64 computer produces NTSC rather than PAL composite video and has the ability to produce "Commodore style LCA" s-video output for a much clearer video display.  It also supports either a vertical or horizontal cartridge slot and TTL level serial capibilities for conveinient use of modern TTL to USB adaptors.
+The Dragon 64 are home computers that were built in the 1980s for the European market by Dragon Data, Ltd. The Dragons are very similar to the TRS-80 Color Computer, and in fact provisions have been made on this board to use a version of the TRS-80 color computer ROM and a different plug on the keyboard PCB to allow it to become a reasonably compatible TRS-80 color computer clone.   This version of the Dragon 64 computer produces NTSC rather than PAL composite video and has the ability to produce "Commodore style LCA" s-video output for a much clearer video display.  It also supports either a vertical or horizontal cartridge slot and TTL level serial capabilities for convenient use of modern TTL to USB adaptors.
 
 A ATX style power connector is also provided allowing use of a modern Pico-ATX power supply.
 
@@ -13,7 +13,7 @@ A design is included for a 3d-printed retro style case.
 
 Note that much of this work is based on the work done by Ciaran Anscomb.  Without that original work, this would have taken much longer to complete.
 
-# NOTE THAT THIS SYSTEM IS STILL A WORK IN PROGRESS AND HAS NOT BEEN THOURHOULY TESTED.   PCBs HAVE NOT BEEN PRODUCED FOR THE LATEST VERSION AND THE ENCLOSURE HAS NOT BEEN TEST PRINTED.  THIS FILE WILL BE UPDATED AS TESTING OCCURS.
+# NOTE THAT THIS SYSTEM IS STILL A WORK IN PROGRESS AND HAS NOT BEEN TESTED.   PCBs HAVE NOT BEEN PRODUCED FOR THE LATEST VERSION AND THE ENCLOSURE HAS NOT BEEN TEST PRINTED.  THIS FILE WILL BE UPDATED AS TESTING OCCURS.
 
 More generalized information on this line of retro computers can be found here:
 
@@ -66,6 +66,7 @@ As of this time, the repo includes
 
 ### Mainboard
 QTY|ref|value|part|description
+--------|--------|----|--------|--------
 1|IC4|4050|4050|
 1|IC7|4069|4069|Hex inverter
 8|IC15|IC16|IC21|IC22|IC26|IC27|IC32|IC33|4164|4164|
