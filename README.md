@@ -176,6 +176,7 @@ QTY|ref|value|part|description
 
 ### Keyboard
 QTY|ref|value|part|description
+--------|--------|----|--------|--------
 53|SW(X)|KEYSWITCH|MX Cherry - Linear
 3||Switch Leveling Kit|LEVELING KIT FOR LARGER KEYS|
 1||Switch Leveling Kit|LEVELING KIT FOR SPACEBAR| EXAMPLE:	https://www.amazon.com/Plate-Mounted-Stabilizers-Balancing-Mechanical-Keyboard/dp/B07K8HP6KC/ref=sr_1_3?keywords=spacebar%2Bstabilizer&qid=1650655494&sprefix=SPACEBAR%2B%2Caps%2C77&sr=8-3&th=1
