@@ -39,6 +39,7 @@ More generalized information on this line of retro computers can be found here:
 * test and document use as a CoCo clone
 * test and document DragonDOS floppy controller
 * test print and fit enclosure
+* Create custom keycap template
 
 ---
 
