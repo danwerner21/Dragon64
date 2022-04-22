@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>N:\Projects\Dragon64\Dragon64Keyboard\DragonKeyboard.sch</source>
+    <date>4/22/2022 1:53:14 PM</date>
+    <tool>Eeschema (5.1.5)-3</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>DragonKeyboard.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="SW1">
+      <value>0</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C4327</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>1</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C438A</tstamp>
+    </comp>
+    <comp ref="SW9">
+      <value>8</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C4575</tstamp>
+    </comp>
+    <comp ref="SW10">
+      <value>9</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C457B</tstamp>
+    </comp>
+    <comp ref="SW3">
+      <value>2</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C46CD</tstamp>
+    </comp>
+    <comp ref="SW4">
+      <value>3</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C46D3</tstamp>
+    </comp>
+    <comp ref="SW11">
+      <value>RIGHT</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C46D9</tstamp>
+    </comp>
+    <comp ref="SW12">
+      <value>MINUS</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C46DF</tstamp>
+    </comp>
+    <comp ref="SW5">
+      <value>4</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C4AED</tstamp>
+    </comp>
+    <comp ref="SW6">
+      <value>5</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C4AF3</tstamp>
+    </comp>
+    <comp ref="SW14">
+      <value>AT</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C4AFF</tstamp>
+    </comp>
+    <comp ref="SW7">
+      <value>6</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C4B05</tstamp>
+    </comp>
+    <comp ref="SW8">
+      <value>7</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C4B0B</tstamp>
+    </comp>
+    <comp ref="SW16">
+      <value>COLON</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C4B17</tstamp>
+    </comp>
+    <comp ref="SW17">
+      <value>SEMICOLON</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C4E7D</tstamp>
+    </comp>
+    <comp ref="SW25">
+      <value>C</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C4E89</tstamp>
+    </comp>
+    <comp ref="SW26">
+      <value>D</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C4E8F</tstamp>
+    </comp>
+    <comp ref="SW19">
+      <value>COMMA</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C4E95</tstamp>
+    </comp>
+    <comp ref="SW20">
+      <value>PERIOD</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C4E9B</tstamp>
+    </comp>
+    <comp ref="SW27">
+      <value>E</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C4EA1</tstamp>
+    </comp>
+    <comp ref="SW28">
+      <value>F</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C4EA7</tstamp>
+    </comp>
+    <comp ref="SW21">
+      <value>SLASH</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C4EAD</tstamp>
+    </comp>
+    <comp ref="SW29">
+      <value>G</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C4EB9</tstamp>
+    </comp>
+    <comp ref="SW30">
+      <value>H</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C4EBF</tstamp>
+    </comp>
+    <comp ref="SW23">
+      <value>A</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C4EC5</tstamp>
+    </comp>
+    <comp ref="SW24">
+      <value>B</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C4ECB</tstamp>
+    </comp>
+    <comp ref="SW31">
+      <value>I</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C4ED1</tstamp>
+    </comp>
+    <comp ref="SW32">
+      <value>J</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C4ED7</tstamp>
+    </comp>
+    <comp ref="SW33">
+      <value>K</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C58BD</tstamp>
+    </comp>
+    <comp ref="SW34">
+      <value>L</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C58C3</tstamp>
+    </comp>
+    <comp ref="SW41">
+      <value>S</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C58C9</tstamp>
+    </comp>
+    <comp ref="SW42">
+      <value>T</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C58CF</tstamp>
+    </comp>
+    <comp ref="SW35">
+      <value>M</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C58D5</tstamp>
+    </comp>
+    <comp ref="SW36">
+      <value>N</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C58DB</tstamp>
+    </comp>
+    <comp ref="SW43">
+      <value>U</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C58E1</tstamp>
+    </comp>
+    <comp ref="SW44">
+      <value>V</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C58E7</tstamp>
+    </comp>
+    <comp ref="SW37">
+      <value>O</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C58ED</tstamp>
+    </comp>
+    <comp ref="SW38">
+      <value>P</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C58F3</tstamp>
+    </comp>
+    <comp ref="SW45">
+      <value>W</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C58F9</tstamp>
+    </comp>
+    <comp ref="SW46">
+      <value>X</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C58FF</tstamp>
+    </comp>
+    <comp ref="SW39">
+      <value>Q</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C5905</tstamp>
+    </comp>
+    <comp ref="SW40">
+      <value>R</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C590B</tstamp>
+    </comp>
+    <comp ref="SW47">
+      <value>Y</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C5911</tstamp>
+    </comp>
+    <comp ref="SW48">
+      <value>Z</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C5917</tstamp>
+    </comp>
+    <comp ref="SW49">
+      <value>SHIFT</value>
+      <footprint>Cherry_MX:CHERRY_PCB_225H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C591D</tstamp>
+    </comp>
+    <comp ref="SW50">
+      <value>DOWN</value>
+      <footprint>Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C5923</tstamp>
+    </comp>
+    <comp ref="SW61">
+      <value>BREAK</value>
+      <footprint>Button_Switch_Keyboard:SW_Cherry_MX_1.75u_PCB</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C5959</tstamp>
+    </comp>
+    <comp ref="SW64">
+      <value>ENTER</value>
+      <footprint>Cherry_MX:CHERRY_PCB_225H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C5977</tstamp>
+    </comp>
+    <comp ref="SW65">
+      <value>SPACE</value>
+      <footprint>Cherry_MX:CHERRY_PCB_625H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C7175</tstamp>
+    </comp>
+    <comp ref="SW66">
+      <value>CLEAR</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C717B</tstamp>
+    </comp>
+    <comp ref="SW70">
+      <value>UP</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C7193</tstamp>
+    </comp>
+    <comp ref="SW73">
+      <value>SHIFT</value>
+      <footprint>Cherry_MX:CHERRY_PCB_275H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A744A8D</tstamp>
+    </comp>
+    <comp ref="SW69">
+      <value>LEFT</value>
+      <footprint>Cherry_MX:CHERRY_PCB_100H</footprint>
+      <libsource lib="Switch" part="SW_Push_45deg" description="Push button switch, normally open, two pins, 45° tilted"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C718D</tstamp>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FA2142D</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FA21FE9</tstamp>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FA22CEB</tstamp>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FA23892</tstamp>
+    </comp>
+    <comp ref="H5">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FA245D5</tstamp>
+    </comp>
+    <comp ref="H6">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FA252E5</tstamp>
+    </comp>
+    <comp ref="H7">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FA260FF</tstamp>
+    </comp>
+    <comp ref="H8">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FA26BA5</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>DRAGON_CONNECTION</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x16_Male" description="Generic connector, single row, 01x16, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60290C61</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>CoCo_CONNECTION</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x16_Male" description="Generic connector, single row, 01x16, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6029311A</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Conn_01x16_Male">
+      <description>Generic connector, single row, 01x16, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x16_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+      </fields>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push_45deg">
+      <description>Push button switch, normally open, two pins, 45° tilted</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push_45deg</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector.lib</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Mechanical.lib</uri>
+    </library>
+    <library logical="Switch">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Switch.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="PB5">
+      <node ref="J1" pin="14"/>
+      <node ref="SW6" pin="2"/>
+      <node ref="SW12" pin="2"/>
+      <node ref="SW69" pin="2"/>
+      <node ref="SW27" pin="2"/>
+      <node ref="J2" pin="14"/>
+      <node ref="SW43" pin="2"/>
+      <node ref="SW35" pin="2"/>
+    </net>
+    <net code="2" name="PB4">
+      <node ref="J2" pin="13"/>
+      <node ref="SW26" pin="2"/>
+      <node ref="SW5" pin="2"/>
+      <node ref="SW19" pin="2"/>
+      <node ref="J1" pin="13"/>
+      <node ref="SW34" pin="2"/>
+      <node ref="SW42" pin="2"/>
+      <node ref="SW50" pin="2"/>
+    </net>
+    <net code="3" name="PB3">
+      <node ref="SW4" pin="2"/>
+      <node ref="SW70" pin="2"/>
+      <node ref="SW41" pin="2"/>
+      <node ref="SW33" pin="2"/>
+      <node ref="SW25" pin="2"/>
+      <node ref="SW17" pin="2"/>
+      <node ref="J2" pin="12"/>
+      <node ref="J1" pin="12"/>
+    </net>
+    <net code="4" name="PB6">
+      <node ref="SW44" pin="2"/>
+      <node ref="J1" pin="15"/>
+      <node ref="J2" pin="15"/>
+      <node ref="SW20" pin="2"/>
+      <node ref="SW28" pin="2"/>
+      <node ref="SW7" pin="2"/>
+      <node ref="SW36" pin="2"/>
+      <node ref="SW11" pin="2"/>
+    </net>
+    <net code="5" name="PB1">
+      <node ref="SW66" pin="2"/>
+      <node ref="J2" pin="10"/>
+      <node ref="SW10" pin="2"/>
+      <node ref="SW39" pin="2"/>
+      <node ref="SW2" pin="2"/>
+      <node ref="J1" pin="10"/>
+      <node ref="SW47" pin="2"/>
+      <node ref="SW23" pin="2"/>
+      <node ref="SW31" pin="2"/>
+    </net>
+    <net code="6" name="PB2">
+      <node ref="SW3" pin="2"/>
+      <node ref="SW40" pin="2"/>
+      <node ref="J2" pin="11"/>
+      <node ref="SW16" pin="2"/>
+      <node ref="SW32" pin="2"/>
+      <node ref="SW61" pin="2"/>
+      <node ref="J1" pin="11"/>
+      <node ref="SW48" pin="2"/>
+      <node ref="SW24" pin="2"/>
+    </net>
+    <net code="7" name="PB0">
+      <node ref="SW38" pin="2"/>
+      <node ref="J2" pin="9"/>
+      <node ref="J1" pin="9"/>
+      <node ref="SW46" pin="2"/>
+      <node ref="SW64" pin="2"/>
+      <node ref="SW14" pin="2"/>
+      <node ref="SW30" pin="2"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="SW9" pin="2"/>
+    </net>
+    <net code="8" name="PA6">
+      <node ref="SW73" pin="1"/>
+      <node ref="SW66" pin="1"/>
+      <node ref="J2" pin="8"/>
+      <node ref="SW64" pin="1"/>
+      <node ref="SW61" pin="1"/>
+      <node ref="SW49" pin="1"/>
+      <node ref="J1" pin="8"/>
+    </net>
+    <net code="9" name="PA5">
+      <node ref="SW46" pin="1"/>
+      <node ref="SW47" pin="1"/>
+      <node ref="SW70" pin="1"/>
+      <node ref="SW11" pin="1"/>
+      <node ref="SW65" pin="1"/>
+      <node ref="SW48" pin="1"/>
+      <node ref="SW50" pin="1"/>
+      <node ref="SW69" pin="1"/>
+      <node ref="J2" pin="5"/>
+      <node ref="J1" pin="7"/>
+    </net>
+    <net code="10" name="PA4">
+      <node ref="SW40" pin="1"/>
+      <node ref="SW43" pin="1"/>
+      <node ref="SW39" pin="1"/>
+      <node ref="J1" pin="6"/>
+      <node ref="SW44" pin="1"/>
+      <node ref="SW42" pin="1"/>
+      <node ref="SW41" pin="1"/>
+      <node ref="SW38" pin="1"/>
+      <node ref="SW45" pin="1"/>
+      <node ref="J2" pin="4"/>
+    </net>
+    <net code="11" name="PA3">
+      <node ref="SW36" pin="1"/>
+      <node ref="SW30" pin="1"/>
+      <node ref="SW31" pin="1"/>
+      <node ref="J1" pin="5"/>
+      <node ref="J2" pin="2"/>
+      <node ref="SW32" pin="1"/>
+      <node ref="SW33" pin="1"/>
+      <node ref="SW35" pin="1"/>
+      <node ref="SW34" pin="1"/>
+      <node ref="SW37" pin="1"/>
+    </net>
+    <net code="12" name="PA2">
+      <node ref="SW28" pin="1"/>
+      <node ref="SW27" pin="1"/>
+      <node ref="SW26" pin="1"/>
+      <node ref="SW25" pin="1"/>
+      <node ref="SW14" pin="1"/>
+      <node ref="J2" pin="1"/>
+      <node ref="J1" pin="4"/>
+      <node ref="SW24" pin="1"/>
+      <node ref="SW23" pin="1"/>
+      <node ref="SW29" pin="1"/>
+    </net>
+    <net code="13" name="GND">
+      <node ref="J1" pin="3"/>
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="14" name="PB7">
+      <node ref="SW65" pin="2"/>
+      <node ref="SW73" pin="2"/>
+      <node ref="SW45" pin="2"/>
+      <node ref="J2" pin="16"/>
+      <node ref="J1" pin="16"/>
+      <node ref="SW37" pin="2"/>
+      <node ref="SW8" pin="2"/>
+      <node ref="SW21" pin="2"/>
+      <node ref="SW29" pin="2"/>
+      <node ref="SW49" pin="2"/>
+    </net>
+    <net code="15" name="PA0">
+      <node ref="SW2" pin="1"/>
+      <node ref="SW3" pin="1"/>
+      <node ref="SW4" pin="1"/>
+      <node ref="SW5" pin="1"/>
+      <node ref="SW6" pin="1"/>
+      <node ref="SW7" pin="1"/>
+      <node ref="SW8" pin="1"/>
+      <node ref="J2" pin="6"/>
+      <node ref="J1" pin="1"/>
+      <node ref="SW1" pin="1"/>
+    </net>
+    <net code="16" name="PA1">
+      <node ref="SW19" pin="1"/>
+      <node ref="SW20" pin="1"/>
+      <node ref="SW21" pin="1"/>
+      <node ref="SW9" pin="1"/>
+      <node ref="SW10" pin="1"/>
+      <node ref="SW16" pin="1"/>
+      <node ref="SW12" pin="1"/>
+      <node ref="J2" pin="7"/>
+      <node ref="J1" pin="2"/>
+      <node ref="SW17" pin="1"/>
+    </net>
+  </nets>
+</export>
