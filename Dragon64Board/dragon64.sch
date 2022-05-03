@@ -283,72 +283,6 @@ F 3 "" H 9300 3000 50  0001 C CNN
 	1    9300 3000
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_02x20_Odd_Even PL7
-U 1 1 5FE1E7FB
-P 13800 2350
-F 0 "PL7" H 13850 3467 50  0000 C CNN
-F 1 "Cartridge" H 13850 3376 50  0000 C CNN
-F 2 "dragon64:Edge_2x20_P2.54mm_Horizontal" H 13800 2350 50  0001 C CNN
-F 3 "~" H 13800 2350 50  0001 C CNN
-	1    13800 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR0119
-U 1 1 5FE249E1
-P 13600 1450
-F 0 "#PWR0119" H 13600 1300 50  0001 C CNN
-F 1 "+12V" V 13615 1578 50  0000 L CNN
-F 2 "" H 13600 1450 50  0001 C CNN
-F 3 "" H 13600 1450 50  0001 C CNN
-	1    13600 1450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+12V #PWR0120
-U 1 1 5FE25101
-P 14100 1450
-F 0 "#PWR0120" H 14100 1300 50  0001 C CNN
-F 1 "+12V" V 14115 1578 50  0000 L CNN
-F 2 "" H 14100 1450 50  0001 C CNN
-F 3 "" H 14100 1450 50  0001 C CNN
-	1    14100 1450
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR0121
-U 1 1 5FE29844
-P 13600 1850
-F 0 "#PWR0121" H 13600 1700 50  0001 C CNN
-F 1 "+5V" V 13615 1978 50  0000 L CNN
-F 2 "" H 13600 1850 50  0001 C CNN
-F 3 "" H 13600 1850 50  0001 C CNN
-	1    13600 1850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0122
-U 1 1 5FE99438
-P 13600 3050
-F 0 "#PWR0122" H 13600 2800 50  0001 C CNN
-F 1 "GND" V 13605 2922 50  0000 R CNN
-F 2 "" H 13600 3050 50  0001 C CNN
-F 3 "" H 13600 3050 50  0001 C CNN
-	1    13600 3050
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0123
-U 1 1 5FE9A14D
-P 14100 3050
-F 0 "#PWR0123" H 14100 2800 50  0001 C CNN
-F 1 "GND" V 14105 2922 50  0000 R CNN
-F 2 "" H 14100 3050 50  0001 C CNN
-F 3 "" H 14100 3050 50  0001 C CNN
-	1    14100 3050
-	0    -1   -1   0   
-$EndComp
 Connection ~ 6900 5000
 Wire Wire Line
 	6900 5000 6900 5300
@@ -610,76 +544,6 @@ Text Label 8250 6350 2    50   ~ 0
 ROMSEL
 Text Label 8250 5000 0    50   ~ 0
 EXTMEM
-Text Label 14100 3350 0    50   ~ 0
-EXTMEM
-Text Label 14100 2850 0    50   ~ 0
-A11
-Text Label 14100 2750 0    50   ~ 0
-A9
-Text Label 14100 2650 0    50   ~ 0
-A7
-Text Label 14100 2550 0    50   ~ 0
-A5
-Text Label 14100 2450 0    50   ~ 0
-A3
-Text Label 14100 2350 0    50   ~ 0
-A1
-Text Label 14100 2250 0    50   ~ 0
-R~W~
-Text Label 13600 2350 2    50   ~ 0
-A0
-Text Label 13600 2450 2    50   ~ 0
-A2
-Text Label 13600 2550 2    50   ~ 0
-A4
-Text Label 13600 2650 2    50   ~ 0
-A6
-Text Label 13600 2750 2    50   ~ 0
-A8
-Text Label 13600 2850 2    50   ~ 0
-A10
-Text Label 13600 2950 2    50   ~ 0
-A12
-Text Label 13600 3250 2    50   ~ 0
-A13
-Text Label 13600 3350 2    50   ~ 0
-A15
-Text Label 13600 3150 2    50   ~ 0
-ESND
-Text Label 14100 3150 0    50   ~ 0
-P2
-Text Label 14100 3250 0    50   ~ 0
-A14
-Text Label 14100 2950 0    50   ~ 0
-ROM2
-Text Label 14100 1550 0    50   ~ 0
-~NMI
-Text Label 14100 1650 0    50   ~ 0
-E
-Text Label 14100 1750 0    50   ~ 0
-CART
-Text Label 13600 1650 2    50   ~ 0
-~RESET
-Text Label 13600 1550 2    50   ~ 0
-~HALT
-Text Label 13600 1750 2    50   ~ 0
-Q
-Text Label 13600 1950 2    50   ~ 0
-D1
-Text Label 13600 2050 2    50   ~ 0
-D3
-Text Label 13600 2150 2    50   ~ 0
-D5
-Text Label 13600 2250 2    50   ~ 0
-D7
-Text Label 14100 1850 0    50   ~ 0
-D0
-Text Label 14100 1950 0    50   ~ 0
-D2
-Text Label 14100 2050 0    50   ~ 0
-D4
-Text Label 14100 2150 0    50   ~ 0
-D6
 Text Label 10400 8850 2    50   ~ 0
 D0
 Text Label 10400 8950 2    50   ~ 0
@@ -2567,37 +2431,21 @@ Wire Wire Line
 	7700 1800 7700 2150
 Wire Wire Line
 	7600 1800 7600 2150
-Text GLabel 14300 1750 2    50   Input ~ 0
-CART
 Text GLabel 15650 1800 2    50   Input ~ 0
 CART
 Wire Wire Line
 	15650 1800 15450 1800
-Wire Wire Line
-	14300 1750 14100 1750
-Text GLabel 14300 1650 2    50   Input ~ 0
-E
 Text GLabel 15650 1700 2    50   Input ~ 0
 E
 Wire Wire Line
 	15650 1700 15450 1700
-Wire Wire Line
-	14300 1650 14100 1650
-Wire Wire Line
-	13600 1750 13350 1750
-Wire Wire Line
-	13600 1650 13350 1650
-Text GLabel 13350 1750 0    50   Input ~ 0
+Text GLabel 14600 1800 0    50   Input ~ 0
 Q
-Text GLabel 13350 1650 0    50   Input ~ 0
+Text GLabel 14600 1700 0    50   Input ~ 0
 ~RESET
-Text GLabel 14250 2250 2    50   Input ~ 0
+Text GLabel 15650 2300 2    50   Input ~ 0
 R~W~
-Wire Wire Line
-	14250 2250 14100 2250
-Wire Wire Line
-	14300 3150 14100 3150
-Text GLabel 14300 3150 2    50   Input ~ 0
+Text GLabel 15700 3200 2    50   Input ~ 0
 P2
 Text GLabel 15650 1600 2    50   Input ~ 0
 ~NMI
@@ -2607,4 +2455,12 @@ Wire Wire Line
 	15450 3000 15700 3000
 Text GLabel 15700 3000 2    50   Input ~ 0
 ROM2
+Wire Wire Line
+	15450 2300 15650 2300
+Wire Wire Line
+	15450 3200 15700 3200
+Wire Wire Line
+	14950 1700 14600 1700
+Wire Wire Line
+	14950 1800 14600 1800
 $EndSCHEMATC
