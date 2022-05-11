@@ -1,4 +1,4 @@
-update=4/22/2022 12:39:25 PM
+update=5/10/2022 10:27:29 AM
 version=1
 last_client=kicad
 [general]
@@ -271,20 +271,9 @@ dPairWidth=0.254
 dPairGap=0.254
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
-Name=V12
-Clearance=0.3048
-TrackWidth=0.5
-ViaDiameter=0.8
-ViaDrill=0.4
-uViaDiameter=0.3
-uViaDrill=0.1
-dPairWidth=0.254
-dPairGap=0.254
-dPairViaGap=0.25
-[pcbnew/Netclasses/3]
 Name=VCC
 Clearance=0.3048
-TrackWidth=1
+TrackWidth=0.762
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3

@@ -1,0 +1,152 @@
+
+(rules PCB dragon64
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 87515)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.6)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 203.2)
+    (clear 203.4)
+    (clear 101.6 (type smd_to_turn_gap))
+    (clear 305.0 (type default_GND))
+    (clear 305.0 (type default_VCC))
+    (clear 50.8 (type smd_smd))
+    (clear 305.0 (type smd_GND))
+    (clear 305.0 (type smd_VCC))
+    (clear 305.0 (type "kicad_default"_GND))
+    (clear 305.0 (type "kicad_default"_VCC))
+    (clear 305.0 (type GND_GND))
+    (clear 305.0 (type GND_VCC))
+    (clear 305.0 (type VCC_VCC))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-GND" "Via[0-1]_800:400_um" GND
+  )
+  (via 
+    "Via[0-1]_800:400_um-VCC" "Via[0-1]_800:400_um" VCC
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    GND "Via[0-1]_800:400_um-GND"
+  )
+  (via_rule
+    VCC "Via[0-1]_800:400_um-VCC"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 203.2)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    /A15 /A14 /A13 /EXTMEM /ROMSEL /D6 /D4 /D2
+    /D0 /D7 /D5 /D3 /D1 /Z6 /Z5 /Z4
+    /Z3 /Z2 /Z1 /Z0 /Z7 /ROM1 /ROM0 /RAM/DD7
+    /RAM/DD6 /RAM/DD5 /RAM/DD4 /RAM/DD3 /RAM/DD2 /RAM/DD1 /RAM/DD0 /RAM/DO7
+    /RAM/DO3 /RAM/DO6 /RAM/DO1 /RAM/DO5 /RAM/DO4 /RAM/DO0 /RAM/DO2 /RAM
+    /Video/oA /Video/oB /Video/CHB "Net-(LK1-Pad2)" "Net-(IC35-Pad10)" "Net-(IC35-Pad5)" "Net-(IC35-Pad1)" "Net-(IC35-Pad4)"
+    "Net-(IC36-Pad13)" "Net-(IC36-Pad1)" /PIAs/~A~G /PIAs/GM2 /PIAs/GM1 /PIAs/GM0 /PIAs/CSS /Video/Y
+    "Net-(C36-Pad2)" "Net-(C37-Pad2)" "Net-(IC4-Pad15)" "Net-(IC4-Pad6)" "Net-(IC4-Pad12)" "Net-(IC4-Pad4)" "Net-(IC4-Pad10)" "Net-(IC4-Pad2)"
+    "Net-(IC11-Pad10)" "Net-(IC11-Pad11)" "Net-(IC11-Pad12)" "Net-(IC11-Pad9)" /P0 /P1 "Net-(R2-Pad2)" "Net-(D12-Pad1)"
+    "Net-(IC2-Pad3)" "Net-(IC2-Pad2)" /PIAs/TAPE /PIAs/MOTOR "Net-(C23-Pad2)" /PIAs/DAC "Net-(IC2-Pad5)" /PIAs/STY
+    /ESND "Net-(IC36-Pad8)" "Net-(IC36-Pad4)" /PIAs/STROBE "Net-(IC35-Pad13)" /PIAs/REM2 /PIAs/REM1 "/PIAs/MOT_FBD"
+    /PIAs/REM3 /PIAs/J+5V "/PIAs/JR_X" "/PIAs/JR_Y" "/PIAs/JL_X" "/PIAs/JL_Y" "/PIAs/JL_F1" "/PIAs/JR_F1"
+    "/PIAs/JL_F2" "/PIAs/JR_F2" /PIAs/TSND /PIAs/MUXB /PIAs/MUXA /PIAs/MUXZ /PIAs/SBS /PIAs/DAC4
+    /PIAs/DAC0 /PIAs/DAC2 /PIAs/DAC3 /PIAs/DAC1 /PIAs/DAC5 /PIAs/KR0 /PIAs/KR2 /PIAs/KC0
+    /PIAs/KC7 /PIAs/KC2 /PIAs/KC5 /PIAs/KC4 /PIAs/KC3 /PIAs/KC6 /PIAs/KC1 /PIAs/KR4
+    /PIAs/KR5 /PIAs/KR6 /PIAs/JCMP /PIAs/PR1 /PIAs/PR6 /PIAs/PR3 /PIAs/PR4 /PIAs/PR5
+    /PIAs/PR2 /PIAs/PR7 /PIAs/PR0 /Serial/TXD /Serial/RXD /Serial/DTR /Serial/CTS /PIAs/CASOUT
+    /PIAs/CASIN /S2 /S0 /S1 /~IRQ /~FIRQ /~CAS /~RAS0
+    /~WE /PIAs/~A2 /PIAs/~ACK /PIAs/~BUSY /~HALT "Net-(IC36-Pad2)" "Net-(IC39-Pad34)" "Net-(IC39-Pad33)"
+    "Net-(IC39-Pad32)" "Net-(IC39-Pad12)" "Net-(IC39-Pad31)" "Net-(IC39-Pad11)" "Net-(IC39-Pad30)" "Net-(IC39-Pad10)" "Net-(IC39-Pad29)" "Net-(IC39-Pad28)"
+    /PIAs/KR1 /PIAs/KR3 "atx_on" "Net-(J1-Pad1)" "Net-(PL6-Pad2)" "RES_IN" "Net-(C9-Pad2)" "Net-(C9-Pad1)"
+    "Net-(C24-Pad2)" "Net-(C24-Pad1)" "Net-(C25-Pad2)" "Net-(IC11-Pad7)" "Net-(IC11-Pad6)" VCLK1 CHROMA "Net-(C44-Pad1)"
+    "Net-(D4-Pad2)" "Net-(D4-Pad1)" "Net-(D5-Pad2)" SOUND VCLK HS FS DA0
+    LUMA "Net-(Q1-Pad3)" "Net-(C49-Pad2)" "Net-(C49-Pad1)" "Net-(C54-Pad1)" "Net-(IC39-Pad6)" "Net-(R43-Pad1)" ~RESET
+    E "Net-(C77-Pad1)" "Net-(D8-Pad1)" A0 A1 R~W~ A2 CART
+    A8 A9 A11 A10 A3 A4 A5 A6
+    A7 A12 Q ~NMI ROM2 P2 "Net-(J5-Pad1)" SSO
+    DISKRAWRD DISKWPRT TR00 WG WD STEP DIRC DISKMOTOR
+    DS2 DS1 DS0 DISKIP DS3 "Net-(R10-Pad1)" "Net-(RV1-Pad2)" "Net-(RV2-Pad2)"
+    DINT2 "Net-(U10-Pad2)" DINT1 "Net-(U3-Pad5)" "Net-(U3-Pad11)" "Net-(U3-Pad3)" "Net-(U3-Pad9)" "Net-(U3-Pad2)"
+    "Net-(U10-Pad4)" "Net-(U4-Pad5)" "Net-(U4-Pad3)" "Net-(U4-Pad9)" "Net-(U4-Pad1)" D2 D1 D0
+    D7 D6 D5 D4 D3 "Net-(U6-Pad5)" "Net-(U6-Pad3)" "Net-(U6-Pad9)"
+    "Net-(U6-Pad1)" "Net-(U7-Pad14)" "Net-(U7-Pad13)" "Net-(U10-Pad31)" "Net-(U10-Pad25)" "Net-(U10-Pad16)" "Net-(U10-Pad30)" "Net-(U10-Pad15)"
+    ENP DDEN "Net-(U10-Pad24)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 203.2)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class GND
+    GND
+    (clearance_class GND)
+    (via_rule GND)
+    (rule
+      (width 762.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class VCC
+    +5V +12V
+    (clearance_class VCC)
+    (via_rule VCC)
+    (rule
+      (width 762.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
