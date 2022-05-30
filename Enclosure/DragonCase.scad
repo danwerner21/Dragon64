@@ -34,11 +34,11 @@ FootHole        = 5;  /* 4.4 for melt in 5 for glue in */
 
 /* [STL element to export] */
 //Top shell
-  TShell        = 1;// [0:No, 1:Yes]
+  TShell        = 0;// [0:No, 1:Yes]
 //Bottom shell
   BShell        = 1;// [0:No, 1:Yes]
 // Show PCBs
-  ShowPCB       = 1;// [0:No, 1:Yes]
+  ShowPCB       = 0;// [0:No, 1:Yes]
   
 /* [Hidden] */
 Couleur1        = "Orange";       
@@ -156,12 +156,6 @@ module TopShell(){
                                     }   
                             }
                             
-                       translate([(Thick/2),(Width/2)-Thick/2-2.4,TopHeight]){
-                            rotate([90,0,90]){
-                                    $fn=6;
-                                    cylinder(d=16,Thick/2);
-                                    }   
-                            }
                         }
 
 
@@ -217,15 +211,15 @@ module TopShell(){
 
          // Serial Opening    
             translate([-1,(Thick)+245,Thick]){
-              cube([18,18,BottomHeight-9]);
+              cube([20,20,BottomHeight-9]);
             }   
             
         // Joystick Opening    
-            translate([97,20,Thick]){    
-              cube([18,Width+2,BottomHeight-9]);
+            translate([96,20,Thick]){    
+              cube([20,Width+2,BottomHeight-9]);
             }
-            translate([138,20,Thick]){    
-              cube([18,Width+2,BottomHeight-9]);
+            translate([137,20,Thick]){    
+              cube([20,Width+2,BottomHeight-9]);
             }
 
          // Power Switch Opening    
@@ -329,11 +323,11 @@ module BottomShell(){
                 
         
             // Joystick Opening    
-            translate([97,-2,Thick]){    
-              cube([18,Dec_Thick+2,BottomHeight-5]);
+            translate([96,-2,Thick]){    
+              cube([20,Dec_Thick+2,BottomHeight-5]);
             }
-            translate([138,-2,Thick]){    
-              cube([18,Dec_Thick+2,BottomHeight-5]);
+            translate([137,-2,Thick]){    
+              cube([20,Dec_Thick+2,BottomHeight-5]);
             }
 
                 
@@ -349,14 +343,19 @@ module BottomShell(){
             } 
             
            // Serial Opening    
-            translate([-1,(Thick)+108,Thick]){
-              cube([12,18,BottomHeight-3]);
+            translate([-1,(Thick)+106,Thick]){
+              cube([12,20,BottomHeight-3]);
             } 
 
 
             // printer Opening    
             translate([-1,(Thick)+42,Thick]){
               cube([21,45,BottomHeight-3]);
+            }   
+
+            // printer Opening    
+            translate([-1,(Thick)+170,Thick]){
+              cube([21,40,BottomHeight-3]);
             }   
 
             // fLOPPY Opening    
@@ -414,11 +413,7 @@ module BottomShell(){
                     cylinder(d=2,20);
                     }
                 }
-                translate([0,(Width/2)-Thick/2+2.4,BottomHeight-4]){
-                 rotate([90,0,90]){
-                    cylinder(d=2,20);
-                    }
-                }
+            
 
             }
         }
@@ -551,7 +546,7 @@ module BottomFeet(){
     translate([10,228,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+8.4);
     
     translate([11.4,260.3,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+8.4);
-    translate([11.4,325,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+8.4);
+    translate([11.4,326,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+8.4);
 
     translate([10,17,Thick/2-8.2]) foot(FootDia,FootHole,FootHeight+8.4);
 
