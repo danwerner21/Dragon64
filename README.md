@@ -93,7 +93,7 @@ QTY|ref|value|part|description
 1|C3|.002u|C|Unpolarized capacitor
 37|C1, C7, C11, C12, C18, C20, C21, C22, C29, C31, C32, C34, C38, C39, C40, C41, C42, C43, C45, C46, C47, C50, C51, C52, C53, C55, C56, C57, C62, C65, C66, C70, C71, C72, C73, C74, C75, C76|.01u|C|Unpolarized capacitor
 5|C6,C13,C14,C15,C16|.02u|C|Unpolarized capacitor
-11|C2, C27, C33, C4, C49, C5, C59, C60, C61, C68, C69|.1u|C|Unpolarized capacitor
+7|C27, C33, C4, C49, C59, C60, C61|.1u|C|Unpolarized capacitor
 2|C33,C49|0.1uf|C|Unpolarized capacitor
 1|C37|100pf|C|Unpolarized capacitor
 1|C78|10nf|C|Unpolarized capacitor

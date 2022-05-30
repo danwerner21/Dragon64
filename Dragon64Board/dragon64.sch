@@ -934,17 +934,6 @@ F 3 "" H 10550 1300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:-12V #PWR0255
-U 1 1 60A525E9
-P 10550 1700
-F 0 "#PWR0255" H 10550 1800 50  0001 C CNN
-F 1 "-12V" H 10565 1873 50  0000 C CNN
-F 2 "" H 10550 1700 50  0001 C CNN
-F 3 "" H 10550 1700 50  0001 C CNN
-	1    10550 1700
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:GND #PWR0256
 U 1 1 60A8D968
 P 9850 2000
@@ -2186,8 +2175,6 @@ Wire Wire Line
 Wire Wire Line
 	10450 1300 10550 1300
 Wire Wire Line
-	10350 1700 10550 1700
-Wire Wire Line
 	9850 1900 9850 2000
 Wire Wire Line
 	1350 4300 2650 4300
@@ -2463,4 +2450,38 @@ Wire Wire Line
 	14950 1700 14600 1700
 Wire Wire Line
 	14950 1800 14600 1800
+NoConn ~ 10350 1400
+NoConn ~ 10350 1700
+Wire Wire Line
+	15450 1900 15650 1900
+Wire Wire Line
+	15450 2000 15650 2000
+Wire Wire Line
+	15450 2100 15650 2100
+Wire Wire Line
+	15450 2200 15650 2200
+Text GLabel 15650 1900 2    50   Input ~ 0
+D0
+Text GLabel 15650 2000 2    50   Input ~ 0
+D2
+Text GLabel 15650 2100 2    50   Input ~ 0
+D4
+Text GLabel 15650 2200 2    50   Input ~ 0
+D6
+Text GLabel 14600 2000 0    50   Input ~ 0
+D1
+Text GLabel 14600 2100 0    50   Input ~ 0
+D3
+Text GLabel 14600 2200 0    50   Input ~ 0
+D5
+Text GLabel 14600 2300 0    50   Input ~ 0
+D7
+Wire Wire Line
+	14950 2000 14600 2000
+Wire Wire Line
+	14950 2100 14600 2100
+Wire Wire Line
+	14950 2200 14600 2200
+Wire Wire Line
+	14950 2300 14600 2300
 $EndSCHEMATC
