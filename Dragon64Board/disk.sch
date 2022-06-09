@@ -561,15 +561,17 @@ D6
 Text GLabel 7850 2450 0    50   Input ~ 0
 D7
 $Comp
-L Oscillator:XO91 X3
+L Device:C C?
 U 1 1 630456A4
-P 5950 1650
-F 0 "X3" H 6294 1696 50  0000 L CNN
-F 1 "4Mhz" H 6294 1605 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 6650 1300 50  0001 C CNN
-F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/XO91.pdf" H 5850 1650 50  0001 C CNN
-	1    5950 1650
-	1    0    0    -1  
+P 9300 4250
+AR Path="/62D1E9EB/62A00355" Ref="C?"  Part="1" 
+AR Path="/62D1E9EB/630456A4" Ref="C5"  Part="1" 
+F 0 "C5" V 9200 4150 50  0000 C CNN
+F 1 "10nf" V 9200 4400 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 9338 4100 50  0001 C CNN
+F 3 "~" H 9300 4250 50  0001 C CNN
+	1    9300 4250
+	0    1    1    0   
 $EndComp
 NoConn ~ 5650 1650
 Wire Wire Line
@@ -1051,8 +1053,6 @@ F 3 "~" H 10150 3950 50  0001 C CNN
 	1    10150 3950
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	10000 3950 9000 3950
 $Comp
 L Diode:1N914 D8
 U 1 1 632B0801
@@ -1066,7 +1066,6 @@ F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 10150 4150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10000 3950 10000 4150
-Connection ~ 10000 3950
 Wire Wire Line
 	10300 4150 10300 3950
 Wire Wire Line
@@ -1482,4 +1481,31 @@ $EndComp
 NoConn ~ 4350 6900
 Text Notes 1800 6250 0    157  ~ 0
 DISK CONTROLLER IS OPTIONAL\nIF NOT NEEDED, DO NOT POPULATE THIS SHEET
+$Comp
+L Device:C C2
+U 1 1 62A00355
+P 9350 3950
+F 0 "C2" V 9250 3850 50  0000 C CNN
+F 1 "0.22uf" V 9250 4100 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 9388 3800 50  0001 C CNN
+F 3 "~" H 9350 3950 50  0001 C CNN
+	1    9350 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9000 3950 9200 3950
+Wire Wire Line
+	9500 3950 10000 3950
+Connection ~ 10000 3950
+$Comp
+L Oscillator:CXO_DIP14 X2
+U 1 1 62C24C2D
+P 5950 1650
+F 0 "X2" H 6294 1696 50  0000 L CNN
+F 1 "CXO_DIP14" H 6294 1605 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 6400 1300 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf" H 5850 1650 50  0001 C CNN
+	1    5950 1650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -95,6 +95,7 @@ QTY|ref|value|part|description
 5|C6,C13,C14,C15,C16|.02u|C|Unpolarized capacitor
 7|C27, C33, C4, C49, C59, C60, C61|.1u|C|Unpolarized capacitor
 2|C33,C49|0.1uf|C|Unpolarized capacitor
+1|C2|0.22uf|C|Unpolarized capacitor
 1|C37|100pf|C|Unpolarized capacitor
 1|C78|10nf|C|Unpolarized capacitor
 2|C8,C48|1u|C|Unpolarized capacitor
@@ -171,7 +172,7 @@ QTY|ref|value|part|description
 1|R35|80K6 1%|R_Small|Resistor| small symbol
 1|RLA1|SPDT|TIANBO-HJR-4102-L|TIANBO HJR-4102-L| Single Pole Relay| 5mm Pitch| 3A
 1|U10|WD2797|WD2797|Floppy disk controller| DIP-40
-1|X3|4Mhz|XO91|HCMOS Clock Oscillator
+1|X2|1Mhz|XO91|HCMOS Clock Oscillator
 
 
 
@@ -182,6 +183,15 @@ QTY|ref|value|part|description
 3||Switch Leveling Kit|LEVELING KIT FOR LARGER KEYS|
 1||Switch Leveling Kit|LEVELING KIT FOR SPACEBAR| EXAMPLE:	https://www.amazon.com/Plate-Mounted-Stabilizers-Balancing-Mechanical-Keyboard/dp/B07K8HP6KC/ref=sr_1_3?keywords=spacebar%2Bstabilizer&qid=1650655494&sprefix=SPACEBAR%2B%2Caps%2C77&sr=8-3&th=1
 2|J1,J2|01X16 HEADER|Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical
+
+### Floppy Drive Calibration (an oscilloscope is required)
+   1. power on, allow machine to reset and boot
+   2. ground Pin 22 of U10(WD2797).
+	3. Set VC0. Measure at pin 16 of the U10(WD2797). Adjust the signal to 250 KHz (capacitor C77)
+	4. WP setting. Measure signal at pin 31 of the U10(WD2797). Set pulse width to 300ns (RV2 potentiometer)
+	5. PR adjustment. Measure signal at pin 29 of U10(WD2797). Set pulse width to 600ns (potentiometer RV1)
+	6. remove Pin 22 of the U10(WD2797) from ground.
+   7. restart machine
 
 ### Case
 
