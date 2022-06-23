@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 87515)
+    (start_pass_no 213094)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -84,8 +84,7 @@
     )
   )
   (class "kicad_default"
-    /A15 /A14 /A13 /EXTMEM /ROMSEL /D6 /D4 /D2
-    /D0 /D7 /D5 /D3 /D1 /Z6 /Z5 /Z4
+    /A15 /A14 /A13 /EXTMEM /ROMSEL /Z6 /Z5 /Z4
     /Z3 /Z2 /Z1 /Z0 /Z7 /ROM1 /ROM0 /RAM/DD7
     /RAM/DD6 /RAM/DD5 /RAM/DD4 /RAM/DD3 /RAM/DD2 /RAM/DD1 /RAM/DD0 /RAM/DO7
     /RAM/DO3 /RAM/DO6 /RAM/DO1 /RAM/DO5 /RAM/DO4 /RAM/DO0 /RAM/DO2 /RAM
@@ -104,20 +103,21 @@
     /PIAs/CASIN /S2 /S0 /S1 /~IRQ /~FIRQ /~CAS /~RAS0
     /~WE /PIAs/~A2 /PIAs/~ACK /PIAs/~BUSY /~HALT "Net-(IC36-Pad2)" "Net-(IC39-Pad34)" "Net-(IC39-Pad33)"
     "Net-(IC39-Pad32)" "Net-(IC39-Pad12)" "Net-(IC39-Pad31)" "Net-(IC39-Pad11)" "Net-(IC39-Pad30)" "Net-(IC39-Pad10)" "Net-(IC39-Pad29)" "Net-(IC39-Pad28)"
-    /PIAs/KR1 /PIAs/KR3 "atx_on" "Net-(J1-Pad1)" "Net-(PL6-Pad2)" "RES_IN" "Net-(C9-Pad2)" "Net-(C9-Pad1)"
-    "Net-(C24-Pad2)" "Net-(C24-Pad1)" "Net-(C25-Pad2)" "Net-(IC11-Pad7)" "Net-(IC11-Pad6)" VCLK1 CHROMA "Net-(C44-Pad1)"
-    "Net-(D4-Pad2)" "Net-(D4-Pad1)" "Net-(D5-Pad2)" SOUND VCLK HS FS DA0
-    LUMA "Net-(Q1-Pad3)" "Net-(C49-Pad2)" "Net-(C49-Pad1)" "Net-(C54-Pad1)" "Net-(IC39-Pad6)" "Net-(R43-Pad1)" ~RESET
-    E "Net-(C77-Pad1)" "Net-(D8-Pad1)" A0 A1 R~W~ A2 CART
-    A8 A9 A11 A10 A3 A4 A5 A6
-    A7 A12 Q ~NMI ROM2 P2 "Net-(J5-Pad1)" SSO
-    DISKRAWRD DISKWPRT TR00 WG WD STEP DIRC DISKMOTOR
-    DS2 DS1 DS0 DISKIP DS3 "Net-(R10-Pad1)" "Net-(RV1-Pad2)" "Net-(RV2-Pad2)"
-    DINT2 "Net-(U10-Pad2)" DINT1 "Net-(U3-Pad5)" "Net-(U3-Pad11)" "Net-(U3-Pad3)" "Net-(U3-Pad9)" "Net-(U3-Pad2)"
-    "Net-(U10-Pad4)" "Net-(U4-Pad5)" "Net-(U4-Pad3)" "Net-(U4-Pad9)" "Net-(U4-Pad1)" D2 D1 D0
-    D7 D6 D5 D4 D3 "Net-(U6-Pad5)" "Net-(U6-Pad3)" "Net-(U6-Pad9)"
-    "Net-(U6-Pad1)" "Net-(U7-Pad14)" "Net-(U7-Pad13)" "Net-(U10-Pad31)" "Net-(U10-Pad25)" "Net-(U10-Pad16)" "Net-(U10-Pad30)" "Net-(U10-Pad15)"
-    ENP DDEN "Net-(U10-Pad24)"
+    /PIAs/KR1 /PIAs/KR3 "atx_on" "Net-(PL6-Pad2)" "RES_IN" "Net-(C9-Pad2)" "Net-(C9-Pad1)" "Net-(C24-Pad2)"
+    "Net-(C24-Pad1)" "Net-(C25-Pad2)" "Net-(IC11-Pad7)" "Net-(IC11-Pad6)" VCLK1 CHROMA "Net-(C44-Pad1)" "Net-(D4-Pad2)"
+    "Net-(D4-Pad1)" "Net-(D5-Pad2)" SOUND VCLK HS FS DA0 LUMA
+    "Net-(Q1-Pad3)" "Net-(C49-Pad2)" "Net-(C49-Pad1)" "Net-(C54-Pad1)" "Net-(IC39-Pad6)" "Net-(R43-Pad1)" ~RESET E
+    "Net-(C77-Pad1)" A0 A1 R~W~ A2 CART A8 A9
+    A11 A10 A3 A4 A5 A6 A7 A12
+    Q ~NMI ROM2 P2 "Net-(J5-Pad1)" SSO DISKRAWRD DISKWPRT
+    TR00 WG WD STEP DIRC DISKMOTOR DS2 DS1
+    DS0 DISKIP DS3 "Net-(R10-Pad1)" "Net-(RV1-Pad2)" "Net-(RV2-Pad2)" DINT2 "Net-(U10-Pad2)"
+    DINT1 "Net-(U3-Pad5)" "Net-(U3-Pad11)" "Net-(U3-Pad3)" "Net-(U3-Pad9)" "Net-(U3-Pad2)" "Net-(U10-Pad4)" "Net-(U4-Pad5)"
+    "Net-(U4-Pad3)" "Net-(U4-Pad9)" "Net-(U4-Pad1)" D2 D1 D0 D7 D6
+    D5 D4 D3 "Net-(U6-Pad5)" "Net-(U6-Pad3)" "Net-(U6-Pad1)" "Net-(U7-Pad14)" "Net-(U7-Pad13)"
+    "Net-(U10-Pad31)" "Net-(U10-Pad25)" "Net-(U10-Pad16)" "Net-(U10-Pad30)" "Net-(U10-Pad15)" ENP DDEN "Net-(C2-Pad2)"
+    "Net-(C2-Pad1)" "Net-(C5-Pad2)" "Net-(C68-Pad2)" "Net-(C68-Pad1)" "Net-(R50-Pad1)" "Net-(U8-Pad13)" DSKCLK "Net-(U11-Pad12)"
+    +3V3
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
