@@ -56,7 +56,9 @@ As of this time, the repo includes
 
 ### System Jumpers
 LK1 - Ram Size Selection 64K=1&2, 32K=2&3
+
 J3 - Composite on Luma J3 on for composite video, off for S-video
+
 J5 - Enable Disk ROM
 
 ---
