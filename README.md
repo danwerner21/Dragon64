@@ -184,19 +184,19 @@ QTY|ref|value|part|description
 2|J1,J2|01X16 HEADER|Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical
 
 ### Floppy Drive Calibration (an oscilloscope is required)
-   1. power on, allow machine to reset and boot
+1. power on, allow machine to reset and boot
 
-   2. ground Pin 22 of U10(WD2797)
+2. ground Pin 22 of U10(WD2797)
 
-	3. Set VC0 by Measuring at pin 16 of the U10(WD2797),  Adjust the signal to 250 KHz (capacitor C77)
+3. Set VC0 by Measuring at pin 16 of the U10(WD2797),  Adjust the signal to 250 KHz (capacitor C77)
 
-	4. WP setting by Measuring signal at pin 31 of the U10(WD2797), Set pulse width to 300ns (RV2 potentiometer)
+4. WP setting by Measuring signal at pin 31 of the U10(WD2797), Set pulse width to 300ns (RV2 potentiometer)
 
-	5. PR adjustment by Measuring signal at pin 29 of U10(WD2797), Set pulse width to 600ns (potentiometer RV1)
+5. PR adjustment by Measuring signal at pin 29 of U10(WD2797), Set pulse width to 600ns (potentiometer RV1)
 
-	6. remove Pin 22 of the U10(WD2797) from ground
+6. remove Pin 22 of the U10(WD2797) from ground
 
-   7. restart machine
+7. restart machine
 
 ### Case
 
