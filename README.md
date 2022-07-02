@@ -5,15 +5,13 @@
 
 The Dragon 64 are home computers that were built in the 1980s for the European market by Dragon Data, Ltd. The Dragons are very similar to the TRS-80 Color Computer, and in fact provisions have been made on this board to use a version of the TRS-80 color computer ROM and a different plug on the keyboard PCB to allow it to become a reasonably compatible TRS-80 color computer clone.   This version of the Dragon 64 computer produces NTSC rather than PAL composite video and has the ability to produce "Commodore style LCA" s-video output for a much clearer video display.  It also supports either a vertical or horizontal cartridge slot and TTL level serial capabilities for convenient use of modern TTL to USB adaptors.
 
-A ATX style power connector is also provided allowing use of a modern Pico-ATX power supply.
+A regulated 12V and 5V power supply is required.
 
 The main PCB also includes a DragonDOS floppy controller that can be optionally populated to support floppy disk support.
 
 A design is included for a 3d-printed retro style case.
 
 Note that much of this work is based on the work done by Ciaran Anscomb.  Without that original work, this would have taken much longer to complete.
-
-# NOTE THAT THIS SYSTEM IS STILL A WORK IN PROGRESS AND HAS NOT BEEN TESTED.   PCBs HAVE NOT BEEN PRODUCED FOR THE LATEST VERSION AND THE ENCLOSURE HAS NOT BEEN TEST PRINTED.  THIS FILE WILL BE UPDATED AS TESTING OCCURS.
 
 More generalized information on this line of retro computers can be found here:
 
@@ -34,13 +32,10 @@ More generalized information on this line of retro computers can be found here:
 
 
 ## To Do:
-* complete tracerouting for new PCB
-* test PCB
 * test and document use as a CoCo clone
-* test and document DragonDOS floppy controller
-* test print and fit enclosure
-* Create custom keycap template
-
+* test the joystick interface
+* test the cassette interface
+* test the printer interface
 ---
 
 
@@ -56,10 +51,12 @@ As of this time, the repo includes
 
 
 ## Known Bugs
-
+* at this time I have not been able to get the system working with CoCo Roms
 
 ### System Jumpers
-
+LK1 - Ram Size Selection 64K=1&2, 32K=2&3
+J3 - Composite on Luma J3 on for composite video, off for S-video
+J5 - Enable Disk ROM
 
 ---
 
@@ -89,7 +86,7 @@ QTY|ref|value|part|description
 1|U9|74LS174|74LS174|Hex D-type Flip-Flop| reset
 2|IC1|,C25|74LS244|74LS244|Octal Buffer and Line Driver With 3-State Output| active-low enables| non-inverting outputs
 1|IC20|74LS273|74LS273|8-bit D Flip-Flop| reset
-1|J1|ATX|ATX-20|ATX Power supply 20pins
+1|J1|Screw Terminal|5mm pitch|Power supply
 1|C3|.002u|C|Unpolarized capacitor
 37|C1, C7, C11, C12, C18, C20, C21, C22, C29, C31, C32, C34, C38, C39, C40, C41, C42, C43, C45, C46, C47, C50, C51, C52, C53, C55, C56, C57, C62, C65, C66, C70, C71, C72, C73, C74, C75, C76|.01u|C|Unpolarized capacitor
 5|C6,C13,C14,C15,C16|.02u|C|Unpolarized capacitor
@@ -121,7 +118,6 @@ QTY|ref|value|part|description
 1|PL2|Printer|Conn_02x10_Odd_Even|Generic connector| double row| 02x10| odd/even pin numbering scheme (row 1 odd numbers| row 2 even numbers)| script generated (kicad-library-utils/schlib/autogen/connector/)
 1|J6|Floppy Interface|Conn_02x17_Odd_Even|Generic connector| double row| 02x17| odd/even pin numbering scheme (row 1 odd numbers| row 2 even numbers)| script generated (kicad-library-utils/schlib/autogen/connector/)
 1|PL7|Cartridge|Conn_02x20_Odd_Even|Generic connector| double row| 02x20| odd/even pin numbering scheme (row 1 odd numbers| row 2 even numbers)| script generated (kicad-library-utils/schlib/autogen/connector/)
-1|PL9|Cartridge|Conn_02x20_Odd_Even|Generic connector| double row| 02x20| odd/even pin numbering scheme (row 1 odd numbers| row 2 even numbers)| script generated (kicad-library-utils/schlib/autogen/connector/)
 1|Y2|1.8432Mhz|Crystal|Two pin crystal
 1|X1|14.31818Mhz|CXO_DIP14|Crystal Clock Oscillator| DIP14-style metal package
 1|D4|1N4002|D|Diode
