@@ -45,6 +45,7 @@ As of this time, the repo includes
 1. The Mainboard PCB Kicad design and Gerber files
 2. The Keyboard PCB Kicad design and Gerber files
 3. OpenSCAD and STL files for a 3d printed case
+4. SVG file for custom keycaps from MAX Keyboard
 
 
 ---
