@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 27)
+    (drawings 28)
     (tracks 6665)
     (zones 0)
     (modules 232)
@@ -11,8 +11,8 @@
 
   (page A3)
   (layers
-    (0 F.Cu signal)
-    (31 B.Cu signal)
+    (0 F.Cu signal hide)
+    (31 B.Cu signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 1.016)
+    (last_trace_width 0.2032)
     (user_trace_width 0.254)
     (user_trace_width 0.381)
     (user_trace_width 0.508)
@@ -12899,6 +12899,9 @@
     )
   )
 
+  (gr_text https://github.com/danwerner21/Dragon64 (at 251.6 164.8) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
   (gr_text +5V (at 38.2 155.5 90) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
@@ -15092,6 +15095,14 @@
   (segment (start 11.375 35.4641) (end 9.375 33.4641) (width 0.762) (layer B.Cu) (net 61))
   (via (at 280.3333 56.2928) (size 0.8) (layers F.Cu B.Cu) (net 61))
   (via (at 118.3011 74.9347) (size 0.8) (layers F.Cu B.Cu) (net 61))
+  (segment (start 31.7748 -23.3748) (end 31.7748 -24.9248) (width 1.016) (layer F.Cu) (net 61))
+  (segment (start 31.7748 -23.3748) (end 38.2954 -23.3748) (width 0.762) (layer F.Cu) (net 61))
+  (segment (start 31.7748 -24.9248) (end 31.775 -24.925) (width 1.016) (layer F.Cu) (net 61))
+  (segment (start 25.7052 -23.3748) (end 31.7748 -23.3748) (width 0.762) (layer F.Cu) (net 61))
+  (segment (start 32.9 143.1) (end 32.9 152.2) (width 1.016) (layer F.Cu) (net 61))
+  (segment (start 32.9 152.2) (end 46.4 165.7) (width 1.016) (layer F.Cu) (net 61))
+  (segment (start 40.8361 160.0181) (end 46.4 165.7) (width 0.762) (layer F.Cu) (net 61))
+  (segment (start 46.4 165.7) (end 50.718 169.9) (width 0.762) (layer F.Cu) (net 61))
   (segment (start 91.4622 76.8076) (end 91.8004 77.1458) (width 0.2032) (layer F.Cu) (net 62))
   (segment (start 91.8004 77.1458) (end 125.9159 77.1458) (width 0.2032) (layer F.Cu) (net 62))
   (segment (start 125.9159 77.1458) (end 126.0409 77.0208) (width 0.2032) (layer F.Cu) (net 62))
@@ -16874,14 +16885,6 @@
   (segment (start 52.87 -14.22) (end 52.87 -13.0649) (width 0.2032) (layer F.Cu) (net 157))
   (via (at 151.3497 27.71) (size 0.8) (layers F.Cu B.Cu) (net 157))
   (via (at 57.0363 -2.1739) (size 0.8) (layers F.Cu B.Cu) (net 157))
-  (segment (start 31.7748 -23.3748) (end 31.7748 -24.9248) (width 1.016) (layer F.Cu) (net 61))
-  (segment (start 31.7748 -23.3748) (end 38.2954 -23.3748) (width 0.762) (layer F.Cu) (net 61))
-  (segment (start 31.7748 -24.9248) (end 31.775 -24.925) (width 1.016) (layer F.Cu) (net 61))
-  (segment (start 25.7052 -23.3748) (end 31.7748 -23.3748) (width 0.762) (layer F.Cu) (net 61))
-  (segment (start 32.9 143.1) (end 32.9 152.2) (width 1.016) (layer F.Cu) (net 61))
-  (segment (start 32.9 152.2) (end 46.4 165.7) (width 1.016) (layer F.Cu) (net 61))
-  (segment (start 40.8361 160.0181) (end 46.4 165.7) (width 0.762) (layer F.Cu) (net 61))
-  (segment (start 46.4 165.7) (end 50.718 169.9) (width 0.762) (layer F.Cu) (net 61))
   (segment (start 5.75 -11.855) (end 5.75 -12.9601) (width 0.2032) (layer B.Cu) (net 158))
   (segment (start 29.235 -24.925) (end 28.0799 -24.925) (width 0.2032) (layer B.Cu) (net 158))
   (segment (start 28.0799 -24.925) (end 28.0799 -25.2138) (width 0.2032) (layer B.Cu) (net 158))
