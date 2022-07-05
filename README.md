@@ -3,7 +3,7 @@
 
 # Dragon 64 Clone PCB
 
-The Dragon 64 are home computers that were built in the 1980s for the European market by Dragon Data, Ltd. The Dragons are very similar to the TRS-80 Color Computer, and in fact provisions have been made to allow the keyboard to become compatible with a TRS-80 color computer clone.   This version of the Dragon 64 computer produces NTSC rather than PAL composite video and has the ability to produce "Commodore style LCA" s-video output for a much clearer video display.  It also supports either a vertical or horizontal cartridge slot and TTL level serial capabilities for convenient use of modern TTL to USB adaptors.
+The Dragon 64 is a home computer that was built in the 1980s for the European market by Dragon Data, Ltd. The Dragons are very similar to the TRS-80 Color Computer, and in fact provisions have been made to allow the keyboard to become compatible with a TRS-80 color computer clone.   This version of the Dragon 64 computer produces NTSC rather than PAL composite video and has the ability to produce "Commodore style LCA" s-video output for a much clearer video display.  It also supports either a vertical or horizontal cartridge slot and TTL level serial capabilities for convenient use of modern TTL to USB adaptors.
 
 It should be possible for this PCB to become a Tandy Color Computer clone as well, but this is not implimented in V1.
 
