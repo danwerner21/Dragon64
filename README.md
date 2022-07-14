@@ -24,7 +24,7 @@ More generalized information on this line of retro computers can be found here:
    * http://dragondata.co.uk/
 
 
-![System](images/system2.jpg)
+![System](images/system4.jpg)
 ![System](images/pcb1.jpg)
 ![System](images/keyboard.jpg)
 
@@ -202,10 +202,11 @@ QTY|ref|value|part|description
 ### Case
 
 ![System](images/pic1.jpg)
-![System](images/pic2.jpg)
-![System](images/pic3.jpg)
-![System](images/pic4.jpg)
-![System](images/pic5.jpg)
+![System](images/enclosure.jpg)
+![System](images/top1.jpg)
+![System](images/top2.jpg)
+![System](images/bottom1.jpg)
+![System](images/bottom2.jpg)
 
 ### Questions?
 
