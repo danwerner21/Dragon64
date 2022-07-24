@@ -1,5 +1,6 @@
 
 ![System](images/system6.jpg)
+(note that I need to get a better picture of the screen, this is s-video and is very clear in person)
 
 # Dragon 64 Clone PCB
 
