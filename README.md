@@ -1,5 +1,5 @@
 
-![System](images/system1.jpg)
+![System](images/system6.jpg)
 
 # Dragon 64 Clone PCB
 
@@ -24,7 +24,7 @@ More generalized information on this line of retro computers can be found here:
    * http://dragondata.co.uk/
 
 
-![System](images/system4.jpg)
+![System](images/system7.jpg)
 ![System](images/pcb1.jpg)
 ![System](images/keyboard.jpg)
 
