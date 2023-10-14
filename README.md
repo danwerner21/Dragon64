@@ -181,8 +181,8 @@ QTY|ref|value|part|description
 QTY|ref|value|part|description
 --------|--------|----|--------|--------
 53|SW(X)|KEYSWITCH|MX Cherry - Linear
-3||Switch Leveling Kit|LEVELING KIT FOR LARGER KEYS|
-1||Switch Leveling Kit|LEVELING KIT FOR SPACEBAR| EXAMPLE:	https://www.amazon.com/Plate-Mounted-Stabilizers-Balancing-Mechanical-Keyboard/dp/B07K8HP6KC/ref=sr_1_3?keywords=spacebar%2Bstabilizer&qid=1650655494&sprefix=SPACEBAR%2B%2Caps%2C77&sr=8-3&th=1
+3||Switch Leveling Kit|LEVELING KIT FOR LARGER KEYS|EXAMPLE:https://www.amazon.com/Keyboard-Screw-Stabilizers-6-25u-Mechanical/dp/B094R45K8Z  -or-   https://www.amazon.com/dp/B0978PWJG9 
+1||Switch Leveling Kit|LEVELING KIT FOR SPACEBAR| EXAMPLE:https://www.amazon.com/Keyboard-Screw-Stabilizers-6-25u-Mechanical/dp/B094R45K8Z  -or-   https://www.amazon.com/dp/B0978PWJG9 
 2|J1,J2|01X16 HEADER|Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical
 
 ### Floppy Drive Calibration (an oscilloscope is required)
